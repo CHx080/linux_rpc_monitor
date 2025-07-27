@@ -214,8 +214,8 @@ monitor/CMakeFiles/monitor.dir/clean:
 # Target rules for target rpc/CMakeFiles/client.dir
 
 # All Build rule for target.
-rpc/CMakeFiles/client.dir/all: protocol/CMakeFiles/message.dir/all
 rpc/CMakeFiles/client.dir/all: monitor/CMakeFiles/monitor.dir/all
+rpc/CMakeFiles/client.dir/all: protocol/CMakeFiles/message.dir/all
 	$(MAKE) $(MAKESILENT) -f rpc/CMakeFiles/client.dir/build.make rpc/CMakeFiles/client.dir/depend
 	$(MAKE) $(MAKESILENT) -f rpc/CMakeFiles/client.dir/build.make rpc/CMakeFiles/client.dir/build
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/root/Monitor/build/CMakeFiles --progress-num=1,2 "Built target client"
@@ -247,8 +247,8 @@ rpc/CMakeFiles/client.dir/clean:
 # Target rules for target rpc/CMakeFiles/server.dir
 
 # All Build rule for target.
-rpc/CMakeFiles/server.dir/all: protocol/CMakeFiles/message.dir/all
 rpc/CMakeFiles/server.dir/all: monitor/CMakeFiles/monitor.dir/all
+rpc/CMakeFiles/server.dir/all: protocol/CMakeFiles/message.dir/all
 	$(MAKE) $(MAKESILENT) -f rpc/CMakeFiles/server.dir/build.make rpc/CMakeFiles/server.dir/depend
 	$(MAKE) $(MAKESILENT) -f rpc/CMakeFiles/server.dir/build.make rpc/CMakeFiles/server.dir/build
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/root/Monitor/build/CMakeFiles --progress-num=23,24 "Built target server"

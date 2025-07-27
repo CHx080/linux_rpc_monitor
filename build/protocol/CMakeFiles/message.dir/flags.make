@@ -6,5 +6,5 @@ CXX_DEFINES = -Dmessage_EXPORTS
 
 CXX_INCLUDES = -I/root/Monitor/protocol/message
 
-CXX_FLAGS = -std=gnu++20 -fPIC
+CXX_FLAGS = -g -std=gnu++20 -fPIC
 

@@ -4,87 +4,36 @@
 #include "mem_info.h"
 #include "net_info.h"
 #include "service.pb.h"
-#include <atomic>
 #include <brpc/server.h>
 #include <butil/logging.h>
-#include <memory>
 #include <thread>
 
 class RpcServiceImpl : public Monitor::RpcService {
-  enum TAG {
-    LOAD,
-    STAT,
-    SOFTIRQ,
-    MEM,
-    NET,
-    SIZE,
-  };
-
 public:
-  RpcServiceImpl() {
-    monitor_ths.emplace_back([this]() {
-      auto load_monitor = std::make_unique<LoadMonitor>();
-      while (not this->stop) {
-        if (this->handle) {
-          load_monitor->update(this->handle);
-          done_tag |= (1 << LOAD);
-        }
-      }
-    });
-    monitor_ths.emplace_back([this]() {
-      auto stat_monitor = std::make_unique<StatMonitor>();
-      auto sirq_monitor = std::make_unique<SoftirqMonitor>();
-      while (not this->stop) {
-        if (this->handle) {
-          stat_monitor->update(this->handle);
-          done_tag |= (1 << STAT);
-          sirq_monitor->update(this->handle);
-          done_tag |= (1 << SOFTIRQ);
-        }
-      }
-    });
-    monitor_ths.emplace_back([this]() {
-      auto mem_monitor = std::make_unique<MemMonitor>();
-      while (not this->stop) {
-        if (this->handle) {
-          mem_monitor->update(this->handle);
-          done_tag |= (1 << MEM);
-        }
-      }
-    });
-    monitor_ths.emplace_back([this]() {
-      auto net_monitor = std::make_unique<NetMonitor>();
-      while (not this->stop) {
-        if (this->handle) {
-          net_monitor->update(this->handle);
-          done_tag |= (1 << NET);
-        }
-      }
-    });
-  }
-  ~RpcServiceImpl() override {
-    stop = true;
-    for (auto &t : monitor_ths) {
-      t.join();
-    }
-  }
   void GetMonitorInfo(google::protobuf::RpcController *controller,
                       const google::protobuf::Empty *request,
                       Monitor::MonitorInfo *response,
                       ::google::protobuf::Closure *done) override {
     brpc::ClosureGuard guard(done);
-    handle = response;
-    do {
-    } while (done_tag != (1 << SIZE) - 1);
-    handle = nullptr;
-    done_tag = 0;
+    std::thread t0([response, this]() { this->load_monitor.update(response); });
+    std::thread t1([response, this]() { this->mem_monitor.update(response); });
+    std::thread t2([response, this]() { this->net_monitor.update(response); });
+    std::thread t3([response, this]() {
+      this->stat_monitor.update(response);
+      this->sirq_monitor.update(response);
+    });
+    t0.join();
+    t1.join();
+    t2.join();
+    t3.join();
   }
 
 private:
-  bool stop = false;
-  uint8_t done_tag = 0;
-  std::atomic<Monitor::MonitorInfo *> handle = nullptr;
-  std::vector<std::thread> monitor_ths;
+  LoadMonitor load_monitor;
+  StatMonitor stat_monitor;
+  SoftirqMonitor sirq_monitor;
+  MemMonitor mem_monitor;
+  NetMonitor net_monitor;
 };
 class RpcServer {
 public:

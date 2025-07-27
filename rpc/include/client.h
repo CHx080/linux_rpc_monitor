@@ -7,7 +7,7 @@ public:
   RpcClient(const char *_socket);
   RpcClient(const RpcClient &) = delete;
   RpcClient &operator=(const RpcClient &) = delete;
-  void getMonitorInfo(Monitor::MonitorInfo *info);
+  bool getMonitorInfo(Monitor::MonitorInfo *info);
 
 private:
   brpc::Channel channel;
