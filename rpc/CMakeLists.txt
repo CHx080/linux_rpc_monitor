@@ -8,13 +8,13 @@ find_library(LEVELDB_LIBRARY NAMES leveldb)
 find_library(DL_LIBRARY NAMES dl)
 
 
-add_executable(client ${CMAKE_CURRENT_SOURCE_DIR}/src/client.cc)
+add_library(client SHARED ${CMAKE_CURRENT_SOURCE_DIR}/src/client.cc)
 target_include_directories(client  
   PUBLIC ${CMAKE_CURRENT_SOURCE_DIR}/include
-  PRIVATE ${Protobuf_INCLUDE_DIRS}
+  ${Protobuf_INCLUDE_DIRS}
 )
 target_link_libraries(client 
-  PRIVATE 
+  PUBLIC
   message 
   monitor 
   ${BRPC_LIBRARY}

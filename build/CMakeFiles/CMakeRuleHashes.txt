@@ -5,3 +5,5 @@
 987abb817706ed95e70b15d0db013b01 /root/Monitor/protocol/message/mem_info.pb.cc
 c59bb15e7b48d24b29bf7ad58efaee97 /root/Monitor/protocol/message/net_info.pb.cc
 1abb833dee766e9270fe662d102834e4 /root/Monitor/protocol/message/service.pb.cc
+5499ea81299001f29167f01dc1708180 display/CMakeFiles/display_autogen
+d49f80bea31a30b862d3b7c3d1ef3fd5 display/display_autogen/timestamp

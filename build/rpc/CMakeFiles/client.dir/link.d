@@ -1,5 +1,4 @@
-client: \
-  /usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/Scrt1.o \
+libclient.so: \
   /usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/crti.o \
   /usr/lib/gcc/x86_64-linux-gnu/13/crtbeginS.o \
   CMakeFiles/client.dir/src/client.cc.o \
@@ -23,7 +22,6 @@ client: \
   /usr/lib/gcc/x86_64-linux-gnu/13/libgcc_s.so \
   /usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/libgcc_s.so.1 \
   /usr/lib/gcc/x86_64-linux-gnu/13/libgcc.a \
-  /usr/lib/gcc/x86_64-linux-gnu/13/libgcc.a \
   /usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/libc.so \
   /usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/libc.so \
   /usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/libc.so \
@@ -35,13 +33,8 @@ client: \
   /usr/lib/gcc/x86_64-linux-gnu/13/libgcc_s.so \
   /usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/libgcc_s.so.1 \
   /usr/lib/gcc/x86_64-linux-gnu/13/libgcc.a \
-  /usr/lib/gcc/x86_64-linux-gnu/13/libgcc.a \
   /usr/lib/gcc/x86_64-linux-gnu/13/crtendS.o \
-  /usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/crtn.o \
-  /lib/x86_64-linux-gnu/libz.so.1 \
-  /lib/x86_64-linux-gnu/libsnappy.so.1
-
-/usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/Scrt1.o:
+  /usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/crtn.o
 
 /usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/crti.o:
 
@@ -89,8 +82,6 @@ CMakeFiles/client.dir/src/client.cc.o:
 
 /usr/lib/gcc/x86_64-linux-gnu/13/libgcc.a:
 
-/usr/lib/gcc/x86_64-linux-gnu/13/libgcc.a:
-
 /usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/libc.so:
 
 /usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/libc.so:
@@ -113,12 +104,6 @@ CMakeFiles/client.dir/src/client.cc.o:
 
 /usr/lib/gcc/x86_64-linux-gnu/13/libgcc.a:
 
-/usr/lib/gcc/x86_64-linux-gnu/13/libgcc.a:
-
 /usr/lib/gcc/x86_64-linux-gnu/13/crtendS.o:
 
 /usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/crtn.o:
-
-/lib/x86_64-linux-gnu/libz.so.1:
-
-/lib/x86_64-linux-gnu/libsnappy.so.1:

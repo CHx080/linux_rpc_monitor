@@ -9,7 +9,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "/root/Monitor/rpc/src/client.cc" "rpc/CMakeFiles/client.dir/src/client.cc.o" "gcc" "rpc/CMakeFiles/client.dir/src/client.cc.o.d"
-  "" "rpc/client" "gcc" "rpc/CMakeFiles/client.dir/link.d"
+  "" "rpc/libclient.so" "gcc" "rpc/CMakeFiles/client.dir/link.d"
   )
 
 # Targets to which this target links which contain Fortran sources.
