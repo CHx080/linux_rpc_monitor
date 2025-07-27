@@ -1,0 +1,27 @@
+syntax="proto3";
+package Monitor;
+
+message NetStat {
+  uint64 rx_bytes = 1;
+  uint64 rx_packets = 2;
+  uint64 rx_errors = 3;
+  uint64 rx_drops = 4;
+  uint64 rx_fifo = 5;
+  uint64 rx_frame = 6;
+  uint64 rx_compressed = 7;
+  uint64 rx_multicast = 8;
+
+  uint64 tx_bytes = 9;
+  uint64 tx_packets = 10;
+  uint64 tx_errors = 11;
+  uint64 tx_drops = 12;
+  uint64 tx_fifo = 13;
+  uint64 tx_colls = 14;
+  uint64 tx_carrier = 15;
+  uint64 tx_compressed = 16;
+}
+
+message NetInfo {
+  string net_name = 1;
+  NetStat info = 2;
+}

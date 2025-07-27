@@ -1,0 +1,15 @@
+syntax="proto3";
+package Monitor;
+
+message CpuSoftirq {
+  uint64 hi = 1;
+  uint64 timer = 2;
+  uint64 net_tx = 3;
+  uint64 net_rx = 4;
+  uint64 block = 5;
+  uint64 irq_poll = 6;
+  uint64 tasklet = 7;
+  uint64 sched = 8;
+  uint64 hr_timer = 9;
+  uint64 rcu = 10;
+}

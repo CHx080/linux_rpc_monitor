@@ -1,0 +1,12 @@
+/root/Monitor/build/CMakeFiles/edit_cache.dir
+/root/Monitor/build/CMakeFiles/rebuild_cache.dir
+/root/Monitor/build/protocol/CMakeFiles/message.dir
+/root/Monitor/build/protocol/CMakeFiles/edit_cache.dir
+/root/Monitor/build/protocol/CMakeFiles/rebuild_cache.dir
+/root/Monitor/build/monitor/CMakeFiles/monitor.dir
+/root/Monitor/build/monitor/CMakeFiles/edit_cache.dir
+/root/Monitor/build/monitor/CMakeFiles/rebuild_cache.dir
+/root/Monitor/build/rpc/CMakeFiles/client.dir
+/root/Monitor/build/rpc/CMakeFiles/server.dir
+/root/Monitor/build/rpc/CMakeFiles/edit_cache.dir
+/root/Monitor/build/rpc/CMakeFiles/rebuild_cache.dir

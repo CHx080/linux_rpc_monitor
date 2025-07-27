@@ -1,0 +1,86 @@
+[
+{
+  "directory": "/root/Monitor/build/protocol",
+  "command": "/usr/bin/c++ -Dmessage_EXPORTS -I/root/Monitor/protocol/message -std=gnu++20 -fPIC -o CMakeFiles/message.dir/message/cpu_load.pb.cc.o -c /root/Monitor/protocol/message/cpu_load.pb.cc",
+  "file": "/root/Monitor/protocol/message/cpu_load.pb.cc",
+  "output": "protocol/CMakeFiles/message.dir/message/cpu_load.pb.cc.o"
+},
+{
+  "directory": "/root/Monitor/build/protocol",
+  "command": "/usr/bin/c++ -Dmessage_EXPORTS -I/root/Monitor/protocol/message -std=gnu++20 -fPIC -o CMakeFiles/message.dir/message/cpu_softirq.pb.cc.o -c /root/Monitor/protocol/message/cpu_softirq.pb.cc",
+  "file": "/root/Monitor/protocol/message/cpu_softirq.pb.cc",
+  "output": "protocol/CMakeFiles/message.dir/message/cpu_softirq.pb.cc.o"
+},
+{
+  "directory": "/root/Monitor/build/protocol",
+  "command": "/usr/bin/c++ -Dmessage_EXPORTS -I/root/Monitor/protocol/message -std=gnu++20 -fPIC -o CMakeFiles/message.dir/message/cpu_stat.pb.cc.o -c /root/Monitor/protocol/message/cpu_stat.pb.cc",
+  "file": "/root/Monitor/protocol/message/cpu_stat.pb.cc",
+  "output": "protocol/CMakeFiles/message.dir/message/cpu_stat.pb.cc.o"
+},
+{
+  "directory": "/root/Monitor/build/protocol",
+  "command": "/usr/bin/c++ -Dmessage_EXPORTS -I/root/Monitor/protocol/message -std=gnu++20 -fPIC -o CMakeFiles/message.dir/message/mem_info.pb.cc.o -c /root/Monitor/protocol/message/mem_info.pb.cc",
+  "file": "/root/Monitor/protocol/message/mem_info.pb.cc",
+  "output": "protocol/CMakeFiles/message.dir/message/mem_info.pb.cc.o"
+},
+{
+  "directory": "/root/Monitor/build/protocol",
+  "command": "/usr/bin/c++ -Dmessage_EXPORTS -I/root/Monitor/protocol/message -std=gnu++20 -fPIC -o CMakeFiles/message.dir/message/net_info.pb.cc.o -c /root/Monitor/protocol/message/net_info.pb.cc",
+  "file": "/root/Monitor/protocol/message/net_info.pb.cc",
+  "output": "protocol/CMakeFiles/message.dir/message/net_info.pb.cc.o"
+},
+{
+  "directory": "/root/Monitor/build/protocol",
+  "command": "/usr/bin/c++ -Dmessage_EXPORTS -I/root/Monitor/protocol/message -std=gnu++20 -fPIC -o CMakeFiles/message.dir/message/service.pb.cc.o -c /root/Monitor/protocol/message/service.pb.cc",
+  "file": "/root/Monitor/protocol/message/service.pb.cc",
+  "output": "protocol/CMakeFiles/message.dir/message/service.pb.cc.o"
+},
+{
+  "directory": "/root/Monitor/build/monitor",
+  "command": "/usr/bin/c++ -Dmonitor_EXPORTS -I/root/Monitor/monitor/include -I/root/Monitor/protocol/message -std=gnu++20 -fPIC -o CMakeFiles/monitor.dir/src/cpu_load.cc.o -c /root/Monitor/monitor/src/cpu_load.cc",
+  "file": "/root/Monitor/monitor/src/cpu_load.cc",
+  "output": "monitor/CMakeFiles/monitor.dir/src/cpu_load.cc.o"
+},
+{
+  "directory": "/root/Monitor/build/monitor",
+  "command": "/usr/bin/c++ -Dmonitor_EXPORTS -I/root/Monitor/monitor/include -I/root/Monitor/protocol/message -std=gnu++20 -fPIC -o CMakeFiles/monitor.dir/src/cpu_softirq.cc.o -c /root/Monitor/monitor/src/cpu_softirq.cc",
+  "file": "/root/Monitor/monitor/src/cpu_softirq.cc",
+  "output": "monitor/CMakeFiles/monitor.dir/src/cpu_softirq.cc.o"
+},
+{
+  "directory": "/root/Monitor/build/monitor",
+  "command": "/usr/bin/c++ -Dmonitor_EXPORTS -I/root/Monitor/monitor/include -I/root/Monitor/protocol/message -std=gnu++20 -fPIC -o CMakeFiles/monitor.dir/src/cpu_stat.cc.o -c /root/Monitor/monitor/src/cpu_stat.cc",
+  "file": "/root/Monitor/monitor/src/cpu_stat.cc",
+  "output": "monitor/CMakeFiles/monitor.dir/src/cpu_stat.cc.o"
+},
+{
+  "directory": "/root/Monitor/build/monitor",
+  "command": "/usr/bin/c++ -Dmonitor_EXPORTS -I/root/Monitor/monitor/include -I/root/Monitor/protocol/message -std=gnu++20 -fPIC -o CMakeFiles/monitor.dir/src/mem_info.cc.o -c /root/Monitor/monitor/src/mem_info.cc",
+  "file": "/root/Monitor/monitor/src/mem_info.cc",
+  "output": "monitor/CMakeFiles/monitor.dir/src/mem_info.cc.o"
+},
+{
+  "directory": "/root/Monitor/build/monitor",
+  "command": "/usr/bin/c++ -Dmonitor_EXPORTS -I/root/Monitor/monitor/include -I/root/Monitor/protocol/message -std=gnu++20 -fPIC -o CMakeFiles/monitor.dir/src/net_info.cc.o -c /root/Monitor/monitor/src/net_info.cc",
+  "file": "/root/Monitor/monitor/src/net_info.cc",
+  "output": "monitor/CMakeFiles/monitor.dir/src/net_info.cc.o"
+},
+{
+  "directory": "/root/Monitor/build/monitor",
+  "command": "/usr/bin/c++ -Dmonitor_EXPORTS -I/root/Monitor/monitor/include -I/root/Monitor/protocol/message -std=gnu++20 -fPIC -o CMakeFiles/monitor.dir/src/util.cc.o -c /root/Monitor/monitor/src/util.cc",
+  "file": "/root/Monitor/monitor/src/util.cc",
+  "output": "monitor/CMakeFiles/monitor.dir/src/util.cc.o"
+},
+{
+  "directory": "/root/Monitor/build/rpc",
+  "command": "/usr/bin/c++  -I/root/Monitor/rpc/include -I/root/Monitor/protocol/message -I/root/Monitor/monitor/include -std=gnu++20 -o CMakeFiles/client.dir/src/client.cc.o -c /root/Monitor/rpc/src/client.cc",
+  "file": "/root/Monitor/rpc/src/client.cc",
+  "output": "rpc/CMakeFiles/client.dir/src/client.cc.o"
+},
+{
+  "directory": "/root/Monitor/build/rpc",
+  "command": "/usr/bin/c++  -I/root/Monitor/protocol/message -I/root/Monitor/monitor/include -std=gnu++20 -o CMakeFiles/server.dir/src/server.cc.o -c /root/Monitor/rpc/src/server.cc",
+  "file": "/root/Monitor/rpc/src/server.cc",
+  "output": "rpc/CMakeFiles/server.dir/src/server.cc.o"
+}
+]

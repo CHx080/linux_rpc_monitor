@@ -1,0 +1,10 @@
+syntax="proto3";
+package Monitor;
+
+message CpuLoad {
+  double avg_1 = 1;
+  double avg_3 = 2;
+  double avg_15 = 3;
+  uint64 nr_running = 4;
+  uint64 nr_thread = 5;
+}

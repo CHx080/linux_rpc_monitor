@@ -1,0 +1,82 @@
+syntax="proto3";
+package Monitor;
+
+message MemInfo {
+  // All values in kB
+  uint64 mem_total = 1;
+  uint64 mem_free = 2;
+  uint64 mem_available = 3;
+  uint64 buffers = 4;
+  uint64 cached = 5;
+  uint64 swap_cached = 6;
+  uint64 active = 7;
+  uint64 inactive = 8;
+  uint64 active_anon = 9;       // Active(anon)
+  uint64 inactive_anon = 10;    // Inactive(anon)
+  uint64 active_file = 11;      // Active(file)
+  uint64 inactive_file = 12;    // Inactive(file)
+  uint64 unevictable = 13;
+  uint64 mlocked = 14;
+  
+  // Swap information
+  uint64 swap_total = 15;
+  uint64 swap_free = 16;
+  
+  // Writeback
+  uint64 dirty = 17;
+  uint64 writeback = 18;
+  
+  // Memory usage breakdown
+  uint64 anon_pages = 19;
+  uint64 mapped = 20;
+  uint64 shmem = 21;
+  
+  // Kernel memory
+  uint64 k_reclaimable = 22;
+  uint64 slab = 23;
+  uint64 s_reclaimable = 24;
+  uint64 s_unreclaim = 25;
+  uint64 kernel_stack = 26;
+  uint64 page_tables = 27;
+  uint64 sec_page_tables = 28;
+  
+  // Other
+  uint64 nfs_unstable = 29;
+  uint64 bounce = 30;
+  uint64 writeback_tmp = 31;
+  
+  // Memory limits
+  uint64 commit_limit = 32;
+  uint64 committed_as = 33;
+  
+  // Virtual memory
+  uint64 vmalloc_total = 34;
+  uint64 vmalloc_used = 35;
+  uint64 vmalloc_chunk = 36;
+  
+  // CPU memory
+  uint64 percpu = 37;
+  
+  // Hardware
+  uint64 hardware_corrupted = 38;
+  
+  // Huge pages
+  uint64 anon_huge_pages = 39;
+  uint64 shmem_huge_pages = 40;
+  uint64 shmem_pmd_mapped = 41;
+  uint64 file_huge_pages = 42;
+  uint64 file_pmd_mapped = 43;
+  
+  // Huge pages config
+  uint64 huge_pages_total = 44;
+  uint64 huge_pages_free = 45;
+  uint64 huge_pages_rsvd = 46;
+  uint64 huge_pages_surp = 47;
+  uint64 hugepagesize = 48;
+  uint64 hugetlb = 49;
+  
+  // Direct mapping
+  uint64 direct_map_4k = 50;
+  uint64 direct_map_2m = 51;
+  uint64 direct_map_1g = 52;
+}

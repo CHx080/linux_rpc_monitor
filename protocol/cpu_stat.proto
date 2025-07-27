@@ -1,0 +1,13 @@
+syntax="proto3";
+package Monitor;
+
+message CpuStat {
+  double user = 1;
+  double nice = 2;
+  double sys = 3;
+  double idle = 4;
+  double iowait = 5;
+  double irq = 6;
+  double softirq = 7;
+  double steal = 8;
+}

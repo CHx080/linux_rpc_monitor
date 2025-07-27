@@ -1,0 +1,28 @@
+syntax="proto3";
+package Monitor;
+
+import "google/protobuf/empty.proto";
+import "cpu_stat.proto";
+import "cpu_load.proto";
+import "cpu_softirq.proto";
+import "mem_info.proto";
+import "net_info.proto";
+
+option cc_generic_services = true;
+
+message CpuInfo {
+  string cpu_name = 1;
+  CpuStat cpu_stat = 2;
+  CpuSoftirq cpu_sirq = 3;
+}
+
+message MonitorInfo {
+  MemInfo mem_info = 1;
+  CpuLoad cpu_load = 2;
+  repeated NetInfo net_info = 3;
+  repeated CpuInfo cpu_info = 4;
+}
+
+service RpcService {
+  rpc GetMonitorInfo(google.protobuf.Empty) returns (MonitorInfo);
+}
