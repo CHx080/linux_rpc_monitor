@@ -7,7 +7,7 @@
 #include <unordered_map>
 #include <unordered_set>
 
-class SirqUI : public QWidget, public UI {
+class SirqUI : public UI {
   enum Field {
     CPU,
     HI,
@@ -23,7 +23,7 @@ class SirqUI : public QWidget, public UI {
   };
 
 public:
-  SirqUI(QWidget *parent = nullptr) : QWidget(parent) {
+  SirqUI(QWidget *parent = nullptr) : UI(parent) {
     model.setHorizontalHeaderLabels({"CPU", "HI", "Timer", "Net TX", "Net RX",
                                      "Block", "IRQ Poll", "Tasklet", "Sched",
                                      "HR Timer", "RCU"});

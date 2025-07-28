@@ -4,9 +4,9 @@
 #include <QTableView>
 #include <QVBoxLayout>
 
-class LoadUI : public QWidget, public UI {
+class LoadUI : public UI {
 public:
-  LoadUI(QWidget *parent = nullptr) : QWidget(parent) {
+  LoadUI(QWidget *parent = nullptr) : UI(parent) {
     model.setRowCount(1);
     model.setHorizontalHeaderLabels(
         {"load_1", "load_3", "load_15", "nr_run", "nr_thread"});

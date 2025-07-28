@@ -1,8 +1,4 @@
-#include "cpu_load.h"
-#include "cpu_softirq.h"
-#include "cpu_stat.h"
-#include "mem_info.h"
-#include "net_info.h"
+#include "base.h"
 #include "service.pb.h"
 #include <brpc/server.h>
 #include <butil/logging.h>
@@ -41,7 +37,7 @@ public:
     server.AddService(new RpcServiceImpl,
                       brpc::ServiceOwnership::SERVER_OWNS_SERVICE);
     //......
-    if (not server.Start(port, nullptr)) {
+    if (server.Start(port, nullptr) != 0) {
       std::cerr << "fail start,check the port number!\n";
       exit(EXIT_FAILURE);
     }

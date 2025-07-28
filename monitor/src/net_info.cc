@@ -1,4 +1,4 @@
-#include "net_info.h"
+#include "base.h"
 
 void NetMonitor::update(Monitor::MonitorInfo *info) {
   File file("/proc/net/dev");

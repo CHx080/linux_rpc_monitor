@@ -1,6 +1,8 @@
 #pragma once
 #include "service.pb.h"
-class UI {
+#include <QWidget>
+class UI : public QWidget {
 public:
+  UI(QWidget *parent = nullptr) : QWidget(parent) {}
   virtual void refresh(Monitor::MonitorInfo *info) = 0;
 };

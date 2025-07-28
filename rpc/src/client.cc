@@ -5,7 +5,7 @@
 #include <memory>
 
 RpcClient::RpcClient(const char *_socket) {
-  if (not channel.Init(_socket, nullptr)) {
+  if (channel.Init(_socket, nullptr) != 0) {
     std::cout << "connect failed !\n";
     exit(EXIT_FAILURE);
   }

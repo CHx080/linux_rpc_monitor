@@ -4,9 +4,9 @@
 #include <QTableView>
 #include <QVBoxLayout>
 
-class MemUI : public QWidget, public UI {
+class MemUI : public UI {
 public:
-  MemUI(QWidget *parent = nullptr) : QWidget(parent) {
+  MemUI(QWidget *parent = nullptr) : UI(parent) {
     model.setColumnCount(1);
     model.setVerticalHeaderLabels(
         {// 内存基础信息
@@ -62,6 +62,7 @@ public:
     setWindowTitle("Memory");
     resize(400, 1000);
   }
+
   void refresh(Monitor::MonitorInfo *info) override {
     auto load_info = info->mem_info();
     model.setItem(0, 0,

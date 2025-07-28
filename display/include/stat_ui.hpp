@@ -7,11 +7,11 @@
 #include <unordered_map>
 #include <unordered_set>
 
-class StatUI : public QWidget, public UI {
+class StatUI : public UI {
   enum Field { CPU, USER, NICE, SYS, IDLE, IOWAIT, IRQ, SOFTIRQ, STEAL };
 
 public:
-  StatUI(QWidget *parent = nullptr) : QWidget(parent) {
+  StatUI(QWidget *parent = nullptr) : UI(parent) {
     model.setHorizontalHeaderLabels({"CPU", "User", "Nice", "System", "Idle",
                                      "IOWait", "IRQ", "SoftIRQ", "Steal"});
     tableView.setModel(&model);

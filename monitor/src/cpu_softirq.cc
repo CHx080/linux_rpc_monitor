@@ -1,4 +1,4 @@
-#include "cpu_softirq.h"
+#include "base.h"
 #include <unistd.h>
 
 #define set_sirq(Name)                                                         \

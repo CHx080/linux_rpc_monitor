@@ -1,97 +1,97 @@
 [
 {
   "directory": "/root/Monitor/build/protocol",
-  "command": "/usr/bin/c++ -Dmessage_EXPORTS -I/root/Monitor/protocol/message -O3 -DNDEBUG -std=gnu++20 -fPIC -o CMakeFiles/message.dir/message/cpu_load.pb.cc.o -c /root/Monitor/protocol/message/cpu_load.pb.cc",
+  "command": "/usr/bin/c++ -Dmessage_EXPORTS -I/root/Monitor/protocol/message -O3 -DNDEBUG -std=gnu++17 -fPIC -o CMakeFiles/message.dir/message/cpu_load.pb.cc.o -c /root/Monitor/protocol/message/cpu_load.pb.cc",
   "file": "/root/Monitor/protocol/message/cpu_load.pb.cc",
   "output": "protocol/CMakeFiles/message.dir/message/cpu_load.pb.cc.o"
 },
 {
   "directory": "/root/Monitor/build/protocol",
-  "command": "/usr/bin/c++ -Dmessage_EXPORTS -I/root/Monitor/protocol/message -O3 -DNDEBUG -std=gnu++20 -fPIC -o CMakeFiles/message.dir/message/cpu_softirq.pb.cc.o -c /root/Monitor/protocol/message/cpu_softirq.pb.cc",
+  "command": "/usr/bin/c++ -Dmessage_EXPORTS -I/root/Monitor/protocol/message -O3 -DNDEBUG -std=gnu++17 -fPIC -o CMakeFiles/message.dir/message/cpu_softirq.pb.cc.o -c /root/Monitor/protocol/message/cpu_softirq.pb.cc",
   "file": "/root/Monitor/protocol/message/cpu_softirq.pb.cc",
   "output": "protocol/CMakeFiles/message.dir/message/cpu_softirq.pb.cc.o"
 },
 {
   "directory": "/root/Monitor/build/protocol",
-  "command": "/usr/bin/c++ -Dmessage_EXPORTS -I/root/Monitor/protocol/message -O3 -DNDEBUG -std=gnu++20 -fPIC -o CMakeFiles/message.dir/message/cpu_stat.pb.cc.o -c /root/Monitor/protocol/message/cpu_stat.pb.cc",
+  "command": "/usr/bin/c++ -Dmessage_EXPORTS -I/root/Monitor/protocol/message -O3 -DNDEBUG -std=gnu++17 -fPIC -o CMakeFiles/message.dir/message/cpu_stat.pb.cc.o -c /root/Monitor/protocol/message/cpu_stat.pb.cc",
   "file": "/root/Monitor/protocol/message/cpu_stat.pb.cc",
   "output": "protocol/CMakeFiles/message.dir/message/cpu_stat.pb.cc.o"
 },
 {
   "directory": "/root/Monitor/build/protocol",
-  "command": "/usr/bin/c++ -Dmessage_EXPORTS -I/root/Monitor/protocol/message -O3 -DNDEBUG -std=gnu++20 -fPIC -o CMakeFiles/message.dir/message/mem_info.pb.cc.o -c /root/Monitor/protocol/message/mem_info.pb.cc",
+  "command": "/usr/bin/c++ -Dmessage_EXPORTS -I/root/Monitor/protocol/message -O3 -DNDEBUG -std=gnu++17 -fPIC -o CMakeFiles/message.dir/message/mem_info.pb.cc.o -c /root/Monitor/protocol/message/mem_info.pb.cc",
   "file": "/root/Monitor/protocol/message/mem_info.pb.cc",
   "output": "protocol/CMakeFiles/message.dir/message/mem_info.pb.cc.o"
 },
 {
   "directory": "/root/Monitor/build/protocol",
-  "command": "/usr/bin/c++ -Dmessage_EXPORTS -I/root/Monitor/protocol/message -O3 -DNDEBUG -std=gnu++20 -fPIC -o CMakeFiles/message.dir/message/net_info.pb.cc.o -c /root/Monitor/protocol/message/net_info.pb.cc",
+  "command": "/usr/bin/c++ -Dmessage_EXPORTS -I/root/Monitor/protocol/message -O3 -DNDEBUG -std=gnu++17 -fPIC -o CMakeFiles/message.dir/message/net_info.pb.cc.o -c /root/Monitor/protocol/message/net_info.pb.cc",
   "file": "/root/Monitor/protocol/message/net_info.pb.cc",
   "output": "protocol/CMakeFiles/message.dir/message/net_info.pb.cc.o"
 },
 {
   "directory": "/root/Monitor/build/protocol",
-  "command": "/usr/bin/c++ -Dmessage_EXPORTS -I/root/Monitor/protocol/message -O3 -DNDEBUG -std=gnu++20 -fPIC -o CMakeFiles/message.dir/message/service.pb.cc.o -c /root/Monitor/protocol/message/service.pb.cc",
+  "command": "/usr/bin/c++ -Dmessage_EXPORTS -I/root/Monitor/protocol/message -O3 -DNDEBUG -std=gnu++17 -fPIC -o CMakeFiles/message.dir/message/service.pb.cc.o -c /root/Monitor/protocol/message/service.pb.cc",
   "file": "/root/Monitor/protocol/message/service.pb.cc",
   "output": "protocol/CMakeFiles/message.dir/message/service.pb.cc.o"
 },
 {
   "directory": "/root/Monitor/build/monitor",
-  "command": "/usr/bin/c++ -Dmonitor_EXPORTS -I/root/Monitor/monitor/include -I/root/Monitor/protocol/message -O3 -DNDEBUG -std=gnu++20 -fPIC -o CMakeFiles/monitor.dir/src/cpu_load.cc.o -c /root/Monitor/monitor/src/cpu_load.cc",
+  "command": "/usr/bin/c++ -Dmonitor_EXPORTS -I/root/Monitor/monitor/include -I/root/Monitor/protocol/message -O3 -DNDEBUG -std=gnu++17 -fPIC -o CMakeFiles/monitor.dir/src/cpu_load.cc.o -c /root/Monitor/monitor/src/cpu_load.cc",
   "file": "/root/Monitor/monitor/src/cpu_load.cc",
   "output": "monitor/CMakeFiles/monitor.dir/src/cpu_load.cc.o"
 },
 {
   "directory": "/root/Monitor/build/monitor",
-  "command": "/usr/bin/c++ -Dmonitor_EXPORTS -I/root/Monitor/monitor/include -I/root/Monitor/protocol/message -O3 -DNDEBUG -std=gnu++20 -fPIC -o CMakeFiles/monitor.dir/src/cpu_softirq.cc.o -c /root/Monitor/monitor/src/cpu_softirq.cc",
+  "command": "/usr/bin/c++ -Dmonitor_EXPORTS -I/root/Monitor/monitor/include -I/root/Monitor/protocol/message -O3 -DNDEBUG -std=gnu++17 -fPIC -o CMakeFiles/monitor.dir/src/cpu_softirq.cc.o -c /root/Monitor/monitor/src/cpu_softirq.cc",
   "file": "/root/Monitor/monitor/src/cpu_softirq.cc",
   "output": "monitor/CMakeFiles/monitor.dir/src/cpu_softirq.cc.o"
 },
 {
   "directory": "/root/Monitor/build/monitor",
-  "command": "/usr/bin/c++ -Dmonitor_EXPORTS -I/root/Monitor/monitor/include -I/root/Monitor/protocol/message -O3 -DNDEBUG -std=gnu++20 -fPIC -o CMakeFiles/monitor.dir/src/cpu_stat.cc.o -c /root/Monitor/monitor/src/cpu_stat.cc",
+  "command": "/usr/bin/c++ -Dmonitor_EXPORTS -I/root/Monitor/monitor/include -I/root/Monitor/protocol/message -O3 -DNDEBUG -std=gnu++17 -fPIC -o CMakeFiles/monitor.dir/src/cpu_stat.cc.o -c /root/Monitor/monitor/src/cpu_stat.cc",
   "file": "/root/Monitor/monitor/src/cpu_stat.cc",
   "output": "monitor/CMakeFiles/monitor.dir/src/cpu_stat.cc.o"
 },
 {
   "directory": "/root/Monitor/build/monitor",
-  "command": "/usr/bin/c++ -Dmonitor_EXPORTS -I/root/Monitor/monitor/include -I/root/Monitor/protocol/message -O3 -DNDEBUG -std=gnu++20 -fPIC -o CMakeFiles/monitor.dir/src/mem_info.cc.o -c /root/Monitor/monitor/src/mem_info.cc",
+  "command": "/usr/bin/c++ -Dmonitor_EXPORTS -I/root/Monitor/monitor/include -I/root/Monitor/protocol/message -O3 -DNDEBUG -std=gnu++17 -fPIC -o CMakeFiles/monitor.dir/src/mem_info.cc.o -c /root/Monitor/monitor/src/mem_info.cc",
   "file": "/root/Monitor/monitor/src/mem_info.cc",
   "output": "monitor/CMakeFiles/monitor.dir/src/mem_info.cc.o"
 },
 {
   "directory": "/root/Monitor/build/monitor",
-  "command": "/usr/bin/c++ -Dmonitor_EXPORTS -I/root/Monitor/monitor/include -I/root/Monitor/protocol/message -O3 -DNDEBUG -std=gnu++20 -fPIC -o CMakeFiles/monitor.dir/src/net_info.cc.o -c /root/Monitor/monitor/src/net_info.cc",
+  "command": "/usr/bin/c++ -Dmonitor_EXPORTS -I/root/Monitor/monitor/include -I/root/Monitor/protocol/message -O3 -DNDEBUG -std=gnu++17 -fPIC -o CMakeFiles/monitor.dir/src/net_info.cc.o -c /root/Monitor/monitor/src/net_info.cc",
   "file": "/root/Monitor/monitor/src/net_info.cc",
   "output": "monitor/CMakeFiles/monitor.dir/src/net_info.cc.o"
 },
 {
   "directory": "/root/Monitor/build/monitor",
-  "command": "/usr/bin/c++ -Dmonitor_EXPORTS -I/root/Monitor/monitor/include -I/root/Monitor/protocol/message -O3 -DNDEBUG -std=gnu++20 -fPIC -o CMakeFiles/monitor.dir/src/util.cc.o -c /root/Monitor/monitor/src/util.cc",
+  "command": "/usr/bin/c++ -Dmonitor_EXPORTS -I/root/Monitor/monitor/include -I/root/Monitor/protocol/message -O3 -DNDEBUG -std=gnu++17 -fPIC -o CMakeFiles/monitor.dir/src/util.cc.o -c /root/Monitor/monitor/src/util.cc",
   "file": "/root/Monitor/monitor/src/util.cc",
   "output": "monitor/CMakeFiles/monitor.dir/src/util.cc.o"
 },
 {
   "directory": "/root/Monitor/build/rpc",
-  "command": "/usr/bin/c++ -Dclient_EXPORTS -I/root/Monitor/rpc/include -I/root/Monitor/protocol/message -I/root/Monitor/monitor/include -O3 -DNDEBUG -std=gnu++20 -fPIC -o CMakeFiles/client.dir/src/client.cc.o -c /root/Monitor/rpc/src/client.cc",
+  "command": "/usr/bin/c++ -Dclient_EXPORTS -I/root/Monitor/rpc/include -I/root/Monitor/protocol/message -I/root/Monitor/monitor/include -O3 -DNDEBUG -std=gnu++17 -fPIC -o CMakeFiles/client.dir/src/client.cc.o -c /root/Monitor/rpc/src/client.cc",
   "file": "/root/Monitor/rpc/src/client.cc",
   "output": "rpc/CMakeFiles/client.dir/src/client.cc.o"
 },
 {
   "directory": "/root/Monitor/build/rpc",
-  "command": "/usr/bin/c++  -I/root/Monitor/protocol/message -I/root/Monitor/monitor/include -O3 -DNDEBUG -std=gnu++20 -o CMakeFiles/server.dir/src/server.cc.o -c /root/Monitor/rpc/src/server.cc",
+  "command": "/usr/bin/c++  -I/root/Monitor/protocol/message -I/root/Monitor/monitor/include -O3 -DNDEBUG -std=gnu++17 -o CMakeFiles/server.dir/src/server.cc.o -c /root/Monitor/rpc/src/server.cc",
   "file": "/root/Monitor/rpc/src/server.cc",
   "output": "rpc/CMakeFiles/server.dir/src/server.cc.o"
 },
 {
   "directory": "/root/Monitor/build/display",
-  "command": "/usr/bin/c++ -DQT_CORE_LIB -DQT_GUI_LIB -DQT_NO_DEBUG -DQT_WIDGETS_LIB -I/root/Monitor/display/include -I/root/Monitor/rpc/include -I/root/Monitor/protocol/message -I/root/Monitor/monitor/include -isystem /root/Monitor/build/display/display_autogen/include -isystem /usr/include/x86_64-linux-gnu/qt6/QtCore -isystem /usr/include/x86_64-linux-gnu/qt6 -isystem /usr/lib/x86_64-linux-gnu/qt6/mkspecs/linux-g++ -isystem /usr/include/x86_64-linux-gnu/qt6/QtWidgets -isystem /usr/include/x86_64-linux-gnu/qt6/QtGui -O3 -DNDEBUG -std=gnu++20 -fPIC -o CMakeFiles/display.dir/display_autogen/mocs_compilation.cpp.o -c /root/Monitor/build/display/display_autogen/mocs_compilation.cpp",
+  "command": "/usr/bin/c++ -DQT_CORE_LIB -DQT_GUI_LIB -DQT_NO_DEBUG -DQT_WIDGETS_LIB -I/root/Monitor/display/include -I/root/Monitor/rpc/include -I/root/Monitor/protocol/message -I/root/Monitor/monitor/include -isystem /root/Monitor/build/display/display_autogen/include -isystem /usr/include/x86_64-linux-gnu/qt6/QtCore -isystem /usr/include/x86_64-linux-gnu/qt6 -isystem /usr/lib/x86_64-linux-gnu/qt6/mkspecs/linux-g++ -isystem /usr/include/x86_64-linux-gnu/qt6/QtWidgets -isystem /usr/include/x86_64-linux-gnu/qt6/QtGui -O3 -DNDEBUG -std=gnu++17 -fPIC -o CMakeFiles/display.dir/display_autogen/mocs_compilation.cpp.o -c /root/Monitor/build/display/display_autogen/mocs_compilation.cpp",
   "file": "/root/Monitor/build/display/display_autogen/mocs_compilation.cpp",
   "output": "display/CMakeFiles/display.dir/display_autogen/mocs_compilation.cpp.o"
 },
 {
   "directory": "/root/Monitor/build/display",
-  "command": "/usr/bin/c++ -DQT_CORE_LIB -DQT_GUI_LIB -DQT_NO_DEBUG -DQT_WIDGETS_LIB -I/root/Monitor/display/include -I/root/Monitor/rpc/include -I/root/Monitor/protocol/message -I/root/Monitor/monitor/include -isystem /root/Monitor/build/display/display_autogen/include -isystem /usr/include/x86_64-linux-gnu/qt6/QtCore -isystem /usr/include/x86_64-linux-gnu/qt6 -isystem /usr/lib/x86_64-linux-gnu/qt6/mkspecs/linux-g++ -isystem /usr/include/x86_64-linux-gnu/qt6/QtWidgets -isystem /usr/include/x86_64-linux-gnu/qt6/QtGui -O3 -DNDEBUG -std=gnu++20 -fPIC -o CMakeFiles/display.dir/src/display.cc.o -c /root/Monitor/display/src/display.cc",
+  "command": "/usr/bin/c++ -DQT_CORE_LIB -DQT_GUI_LIB -DQT_NO_DEBUG -DQT_WIDGETS_LIB -I/root/Monitor/display/include -I/root/Monitor/rpc/include -I/root/Monitor/protocol/message -I/root/Monitor/monitor/include -isystem /root/Monitor/build/display/display_autogen/include -isystem /usr/include/x86_64-linux-gnu/qt6/QtCore -isystem /usr/include/x86_64-linux-gnu/qt6 -isystem /usr/lib/x86_64-linux-gnu/qt6/mkspecs/linux-g++ -isystem /usr/include/x86_64-linux-gnu/qt6/QtWidgets -isystem /usr/include/x86_64-linux-gnu/qt6/QtGui -O3 -DNDEBUG -std=gnu++17 -fPIC -o CMakeFiles/display.dir/src/display.cc.o -c /root/Monitor/display/src/display.cc",
   "file": "/root/Monitor/display/src/display.cc",
   "output": "display/CMakeFiles/display.dir/src/display.cc.o"
 }

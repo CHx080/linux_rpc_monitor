@@ -7,12 +7,14 @@
 #include <QApplication>
 #include <QHBoxLayout>
 #include <QMainWindow>
-#include <QMutex>
 #include <QPushButton>
-#include <QThread>
-#include <QVector>
 #include <thread>
+
 int main(int argc, char *argv[]) {
+  if (argc != 2) {
+    std::cout << "Usage : [executable] [ip]:[port]\n";
+    exit(EXIT_FAILURE);
+  }
   QApplication app(argc, argv);
   QMainWindow window;
   window.setWindowTitle("Watch");
@@ -21,8 +23,9 @@ int main(int argc, char *argv[]) {
 
   QWidget *centralWidget = new QWidget(&window);
   window.setCentralWidget(centralWidget);
-
   QHBoxLayout *hLayout = new QHBoxLayout(centralWidget);
+  centralWidget->setLayout(hLayout);
+
   QPushButton *buttons[] = {
       new QPushButton("CPU Load"),    new QPushButton("CPU Stat"),
       new QPushButton("CPU SoftIRQ"), new QPushButton("Memory"),
@@ -30,61 +33,26 @@ int main(int argc, char *argv[]) {
   for (int i = 0; i < 6; ++i) {
     hLayout->addWidget(buttons[i]);
   }
-  centralWidget->setLayout(hLayout);
 
-  QVector<UI *> ui_obj;
-  QMutex mtx;
+  UI *ui_obj[] = {
+      new LoadUI, new StatUI, new SirqUI, new MemUI, new NetUI,
+  };
 
-  QObject::connect(buttons[0], &QPushButton::clicked, [&mtx, &ui_obj]() {
-    LoadUI *loadUI = new LoadUI;
-    {
-      QMutexLocker<QMutex> guard(&mtx);
-      ui_obj.emplace_back(loadUI);
-    }
-    loadUI->setAttribute(Qt::WA_DeleteOnClose);
-    loadUI->show();
-  });
-  QObject::connect(buttons[1], &QPushButton::clicked, [&mtx, &ui_obj]() {
-    StatUI *statUI = new StatUI;
-    {
-      QMutexLocker<QMutex> guard(&mtx);
-      ui_obj.emplace_back(statUI);
-    }
-    statUI->setAttribute(Qt::WA_DeleteOnClose);
-    statUI->show();
-  });
-  QObject::connect(buttons[2], &QPushButton::clicked, [&mtx, &ui_obj]() {
-    SirqUI *sirqUI = new SirqUI;
-    {
-      QMutexLocker<QMutex> guard(&mtx);
-      ui_obj.emplace_back(sirqUI);
-    }
-    sirqUI->setAttribute(Qt::WA_DeleteOnClose);
-    sirqUI->show();
-  });
-  QObject::connect(buttons[3], &QPushButton::clicked, [&mtx, &ui_obj]() {
-    MemUI *memUI = new MemUI;
-    {
-      QMutexLocker<QMutex> guard(&mtx);
-      ui_obj.emplace_back(memUI);
-    }
-    memUI->setAttribute(Qt::WA_DeleteOnClose);
-    memUI->show();
-  });
-
-  QObject::connect(buttons[4], &QPushButton::clicked, [&mtx, &ui_obj]() {
-    NetUI *netUI = new NetUI;
-    {
-      QMutexLocker<QMutex> guard(&mtx);
-      ui_obj.emplace_back(netUI);
-    }
-    netUI->setAttribute(Qt::WA_DeleteOnClose);
-    netUI->show();
-  });
-
+  QObject::connect(buttons[0], &QPushButton::clicked,
+                   [ui_obj]() { ui_obj[0]->show(); });
+  QObject::connect(buttons[1], &QPushButton::clicked,
+                   [ui_obj]() { ui_obj[1]->show(); });
+  QObject::connect(buttons[2], &QPushButton::clicked,
+                   [ui_obj]() { ui_obj[2]->show(); });
+  QObject::connect(buttons[3], &QPushButton::clicked,
+                   [ui_obj]() { ui_obj[3]->show(); });
+  QObject::connect(buttons[4], &QPushButton::clicked,
+                   [ui_obj]() { ui_obj[4]->show(); });
   QObject::connect(buttons[5], &QPushButton::clicked,
                    []() { exit(EXIT_SUCCESS); });
+
   window.show();
+
   std::thread loop([&ui_obj, argv]() {
     RpcClient client(argv[1]);
     while (true) {
@@ -93,9 +61,10 @@ int main(int argc, char *argv[]) {
       for (UI *it : ui_obj) {
         it->refresh(&info);
       }
-      QThread::sleep(1);
+      std::this_thread::sleep_for(std::chrono::seconds(1));
     }
   });
   loop.detach();
+
   return app.exec();
 }

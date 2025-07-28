@@ -6,5 +6,5 @@ CXX_DEFINES = -Dmonitor_EXPORTS
 
 CXX_INCLUDES = -I/root/Monitor/monitor/include -I/root/Monitor/protocol/message
 
-CXX_FLAGS = -O3 -DNDEBUG -std=gnu++20 -fPIC
+CXX_FLAGS = -O3 -DNDEBUG -std=gnu++17 -fPIC
 

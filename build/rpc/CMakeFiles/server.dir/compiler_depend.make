@@ -3,11 +3,6 @@
 
 rpc/CMakeFiles/server.dir/src/server.cc.o: /root/Monitor/rpc/src/server.cc \
   /root/Monitor/monitor/include/base.h \
-  /root/Monitor/monitor/include/cpu_load.h \
-  /root/Monitor/monitor/include/cpu_softirq.h \
-  /root/Monitor/monitor/include/cpu_stat.h \
-  /root/Monitor/monitor/include/mem_info.h \
-  /root/Monitor/monitor/include/net_info.h \
   /root/Monitor/monitor/include/util.h \
   /root/Monitor/protocol/message/cpu_load.pb.h \
   /root/Monitor/protocol/message/cpu_softirq.pb.h \
@@ -40,8 +35,6 @@ rpc/CMakeFiles/server.dir/src/server.cc.o: /root/Monitor/rpc/src/server.cc \
   /usr/include/c++/13/bits/allocator.h \
   /usr/include/c++/13/bits/atomic_base.h \
   /usr/include/c++/13/bits/atomic_lockfree_defines.h \
-  /usr/include/c++/13/bits/atomic_timed_wait.h \
-  /usr/include/c++/13/bits/atomic_wait.h \
   /usr/include/c++/13/bits/basic_ios.h \
   /usr/include/c++/13/bits/basic_ios.tcc \
   /usr/include/c++/13/bits/basic_string.h \
@@ -69,14 +62,12 @@ rpc/CMakeFiles/server.dir/src/server.cc.o: /root/Monitor/rpc/src/server.cc \
   /usr/include/c++/13/bits/invoke.h \
   /usr/include/c++/13/bits/ios_base.h \
   /usr/include/c++/13/bits/istream.tcc \
-  /usr/include/c++/13/bits/iterator_concepts.h \
   /usr/include/c++/13/bits/list.tcc \
   /usr/include/c++/13/bits/locale_classes.h \
   /usr/include/c++/13/bits/locale_classes.tcc \
   /usr/include/c++/13/bits/locale_facets.h \
   /usr/include/c++/13/bits/locale_facets.tcc \
   /usr/include/c++/13/bits/localefwd.h \
-  /usr/include/c++/13/bits/max_size_type.h \
   /usr/include/c++/13/bits/memory_resource.h \
   /usr/include/c++/13/bits/memoryfwd.h \
   /usr/include/c++/13/bits/move.h \
@@ -90,15 +81,8 @@ rpc/CMakeFiles/server.dir/src/server.cc.o: /root/Monitor/rpc/src/server.cc \
   /usr/include/c++/13/bits/predefined_ops.h \
   /usr/include/c++/13/bits/ptr_traits.h \
   /usr/include/c++/13/bits/range_access.h \
-  /usr/include/c++/13/bits/ranges_algo.h \
-  /usr/include/c++/13/bits/ranges_algobase.h \
-  /usr/include/c++/13/bits/ranges_base.h \
-  /usr/include/c++/13/bits/ranges_cmp.h \
-  /usr/include/c++/13/bits/ranges_uninitialized.h \
-  /usr/include/c++/13/bits/ranges_util.h \
   /usr/include/c++/13/bits/refwrap.h \
   /usr/include/c++/13/bits/requires_hosted.h \
-  /usr/include/c++/13/bits/semaphore_base.h \
   /usr/include/c++/13/bits/shared_ptr.h \
   /usr/include/c++/13/bits/shared_ptr_atomic.h \
   /usr/include/c++/13/bits/shared_ptr_base.h \
@@ -152,7 +136,6 @@ rpc/CMakeFiles/server.dir/src/server.cc.o: /root/Monitor/rpc/src/server.cc \
   /usr/include/c++/13/clocale \
   /usr/include/c++/13/cmath \
   /usr/include/c++/13/compare \
-  /usr/include/c++/13/concepts \
   /usr/include/c++/13/cstddef \
   /usr/include/c++/13/cstdint \
   /usr/include/c++/13/cstdio \
@@ -189,7 +172,6 @@ rpc/CMakeFiles/server.dir/src/server.cc.o: /root/Monitor/rpc/src/server.cc \
   /usr/include/c++/13/memory \
   /usr/include/c++/13/mutex \
   /usr/include/c++/13/new \
-  /usr/include/c++/13/numbers \
   /usr/include/c++/13/optional \
   /usr/include/c++/13/ostream \
   /usr/include/c++/13/pstl/execution_defs.h \
@@ -197,12 +179,10 @@ rpc/CMakeFiles/server.dir/src/server.cc.o: /root/Monitor/rpc/src/server.cc \
   /usr/include/c++/13/pstl/glue_memory_defs.h \
   /usr/include/c++/13/pstl/pstl_config.h \
   /usr/include/c++/13/ratio \
-  /usr/include/c++/13/semaphore \
   /usr/include/c++/13/set \
   /usr/include/c++/13/sstream \
   /usr/include/c++/13/stdexcept \
   /usr/include/c++/13/stdlib.h \
-  /usr/include/c++/13/stop_token \
   /usr/include/c++/13/streambuf \
   /usr/include/c++/13/string \
   /usr/include/c++/13/string_view \
@@ -298,14 +278,12 @@ rpc/CMakeFiles/server.dir/src/server.cc.o: /root/Monitor/rpc/src/server.cc \
   /usr/include/netinet/in.h \
   /usr/include/pthread.h \
   /usr/include/sched.h \
-  /usr/include/semaphore.h \
   /usr/include/stdc-predef.h \
   /usr/include/stdint.h \
   /usr/include/stdio.h \
   /usr/include/stdlib.h \
   /usr/include/string.h \
   /usr/include/strings.h \
-  /usr/include/syscall.h \
   /usr/include/time.h \
   /usr/include/unistd.h \
   /usr/include/wchar.h \
@@ -316,8 +294,6 @@ rpc/CMakeFiles/server.dir/src/server.cc.o: /root/Monitor/rpc/src/server.cc \
   /usr/include/x86_64-linux-gnu/asm/posix_types_64.h \
   /usr/include/x86_64-linux-gnu/asm/socket.h \
   /usr/include/x86_64-linux-gnu/asm/sockios.h \
-  /usr/include/x86_64-linux-gnu/asm/unistd.h \
-  /usr/include/x86_64-linux-gnu/asm/unistd_64.h \
   /usr/include/x86_64-linux-gnu/bits/atomic_wide_counter.h \
   /usr/include/x86_64-linux-gnu/bits/byteswap.h \
   /usr/include/x86_64-linux-gnu/bits/confname.h \
@@ -355,7 +331,6 @@ rpc/CMakeFiles/server.dir/src/server.cc.o: /root/Monitor/rpc/src/server.cc \
   /usr/include/x86_64-linux-gnu/bits/select-decl.h \
   /usr/include/x86_64-linux-gnu/bits/select.h \
   /usr/include/x86_64-linux-gnu/bits/select2.h \
-  /usr/include/x86_64-linux-gnu/bits/semaphore.h \
   /usr/include/x86_64-linux-gnu/bits/setjmp.h \
   /usr/include/x86_64-linux-gnu/bits/sockaddr.h \
   /usr/include/x86_64-linux-gnu/bits/socket.h \
@@ -375,7 +350,6 @@ rpc/CMakeFiles/server.dir/src/server.cc.o: /root/Monitor/rpc/src/server.cc \
   /usr/include/x86_64-linux-gnu/bits/strings_fortified.h \
   /usr/include/x86_64-linux-gnu/bits/struct_mutex.h \
   /usr/include/x86_64-linux-gnu/bits/struct_rwlock.h \
-  /usr/include/x86_64-linux-gnu/bits/syscall.h \
   /usr/include/x86_64-linux-gnu/bits/thread-shared-types.h \
   /usr/include/x86_64-linux-gnu/bits/time.h \
   /usr/include/x86_64-linux-gnu/bits/time64.h \
@@ -443,7 +417,6 @@ rpc/CMakeFiles/server.dir/src/server.cc.o: /root/Monitor/rpc/src/server.cc \
   /usr/include/x86_64-linux-gnu/sys/select.h \
   /usr/include/x86_64-linux-gnu/sys/single_threaded.h \
   /usr/include/x86_64-linux-gnu/sys/socket.h \
-  /usr/include/x86_64-linux-gnu/sys/syscall.h \
   /usr/include/x86_64-linux-gnu/sys/time.h \
   /usr/include/x86_64-linux-gnu/sys/types.h \
   /usr/include/x86_64-linux-gnu/sys/uio.h \
@@ -644,6 +617,8 @@ rpc/CMakeFiles/server.dir/src/server.cc.o:
 
 /usr/local/include/bvar/window.h:
 
+/usr/local/include/bvar/status.h:
+
 /usr/local/include/bvar/scoped_timer.h:
 
 /usr/local/include/bvar/reducer.h:
@@ -732,6 +707,8 @@ rpc/CMakeFiles/server.dir/src/server.cc.o:
 
 /usr/local/include/bthread/bthread.h:
 
+/usr/local/include/brpc/uri.h:
+
 /usr/local/include/brpc/traceprintf.h:
 
 /usr/local/include/brpc/stream_creator.h:
@@ -802,8 +779,6 @@ rpc/CMakeFiles/server.dir/src/server.cc.o:
 
 /usr/include/x86_64-linux-gnu/sys/time.h:
 
-/usr/include/x86_64-linux-gnu/sys/syscall.h:
-
 /usr/include/x86_64-linux-gnu/sys/socket.h:
 
 /usr/include/x86_64-linux-gnu/sys/single_threaded.h:
@@ -866,6 +841,8 @@ rpc/CMakeFiles/server.dir/src/server.cc.o:
 
 /usr/include/x86_64-linux-gnu/bits/types/struct_sched_param.h:
 
+/usr/include/x86_64-linux-gnu/bits/types/struct_itimerspec.h:
+
 /usr/include/x86_64-linux-gnu/c++/13/bits/gthr.h:
 
 /usr/include/x86_64-linux-gnu/bits/unistd.h:
@@ -916,43 +893,9 @@ rpc/CMakeFiles/server.dir/src/server.cc.o:
 
 /usr/include/x86_64-linux-gnu/bits/stdint-least.h:
 
-/usr/include/x86_64-linux-gnu/bits/stdint-intn.h:
+/usr/include/c++/13/iostream:
 
-/usr/include/x86_64-linux-gnu/bits/socket_type.h:
-
-/usr/include/x86_64-linux-gnu/bits/socket2.h:
-
-/usr/include/x86_64-linux-gnu/bits/socket.h:
-
-/usr/include/x86_64-linux-gnu/bits/sockaddr.h:
-
-/usr/include/x86_64-linux-gnu/bits/semaphore.h:
-
-/usr/include/x86_64-linux-gnu/bits/sched.h:
-
-/usr/include/x86_64-linux-gnu/bits/pthread_stack_min-dynamic.h:
-
-/usr/include/x86_64-linux-gnu/bits/posix_opt.h:
-
-/usr/include/x86_64-linux-gnu/bits/posix2_lim.h:
-
-/usr/include/x86_64-linux-gnu/bits/types/struct_iovec.h:
-
-/usr/include/x86_64-linux-gnu/bits/mathcalls.h:
-
-/usr/include/x86_64-linux-gnu/bits/mathcalls-narrow.h:
-
-/usr/local/include/butil/arena.h:
-
-/usr/include/x86_64-linux-gnu/bits/mathcalls-helper-functions.h:
-
-/usr/include/x86_64-linux-gnu/bits/long-double.h:
-
-/usr/include/x86_64-linux-gnu/bits/local_lim.h:
-
-/usr/include/x86_64-linux-gnu/bits/libm-simd-decl-stubs.h:
-
-/usr/include/x86_64-linux-gnu/bits/syscall.h:
+/usr/include/c++/13/bits/hashtable.h:
 
 /usr/include/c++/13/algorithm:
 
@@ -964,11 +907,9 @@ rpc/CMakeFiles/server.dir/src/server.cc.o:
 
 /usr/include/c++/13/bits/postypes.h:
 
-/usr/include/c++/13/concepts:
+/usr/include/c++/13/cstring:
 
-/usr/include/x86_64-linux-gnu/bits/setjmp.h:
-
-/usr/include/c++/13/compare:
+/usr/include/c++/13/bits/unordered_set.h:
 
 /usr/include/asm-generic/bitsperlong.h:
 
@@ -984,6 +925,10 @@ rpc/CMakeFiles/server.dir/src/server.cc.o:
 
 /usr/include/c++/13/clocale:
 
+/usr/local/include/bvar/passive_status.h:
+
+/usr/include/c++/13/iterator:
+
 /usr/local/include/bvar/recorder.h:
 
 /usr/local/include/butil/scoped_lock.h:
@@ -991,10 +936,6 @@ rpc/CMakeFiles/server.dir/src/server.cc.o:
 /usr/include/c++/13/cmath:
 
 /usr/include/c++/13/bits/locale_classes.tcc:
-
-/usr/local/include/bvar/passive_status.h:
-
-/usr/include/c++/13/iterator:
 
 /usr/lib/x86_64-linux-gnu/crtn.o:
 
@@ -1004,17 +945,39 @@ rpc/CMakeFiles/server.dir/src/server.cc.o:
 
 /usr/include/c++/13/cassert:
 
+/usr/include/c++/13/bits/vector.tcc:
+
 /usr/include/c++/13/bits/unique_ptr.h:
 
 /usr/include/c++/13/bits/unique_lock.h:
+
+/usr/local/include/bvar/gflag.h:
+
+/usr/include/c++/13/bits/stringfwd.h:
 
 /usr/include/c++/13/bits/streambuf_iterator.h:
 
 /usr/include/c++/13/bits/streambuf.tcc:
 
+/usr/include/c++/13/cstdint:
+
+/usr/include/math.h:
+
+/usr/local/include/brpc/redis.h:
+
+/usr/include/c++/13/climits:
+
+/usr/include/c++/13/ext/numeric_traits.h:
+
 /usr/include/c++/13/bits/stl_uninitialized.h:
 
-/root/Monitor/monitor/include/cpu_load.h:
+/usr/local/include/butil/memory/scope_guard.h:
+
+/usr/include/c++/13/bits/stl_set.h:
+
+/usr/include/x86_64-linux-gnu/bits/types/sigset_t.h:
+
+/usr/include/c++/13/ext/hash_set:
 
 /usr/include/c++/13/bits/stl_multiset.h:
 
@@ -1023,6 +986,12 @@ rpc/CMakeFiles/server.dir/src/server.cc.o:
 /usr/include/x86_64-linux-gnu/asm/posix_types_64.h:
 
 /usr/include/c++/13/bits/this_thread_sleep.h:
+
+/usr/local/include/brpc/versioned_ref_with_id.h:
+
+/usr/include/c++/13/limits:
+
+/usr/include/c++/13/ext/atomicity.h:
 
 /usr/include/c++/13/bits/stl_list.h:
 
@@ -1062,6 +1031,10 @@ rpc/CMakeFiles/server.dir/src/server.cc.o:
 
 /usr/include/c++/13/thread:
 
+/usr/include/c++/13/bits/stl_heap.h:
+
+/usr/include/c++/13/ext/string_conversions.h:
+
 /usr/include/c++/13/bits/range_access.h:
 
 /usr/include/c++/13/bits/stl_algobase.h:
@@ -1069,6 +1042,20 @@ rpc/CMakeFiles/server.dir/src/server.cc.o:
 /usr/local/include/brpc/details/profiler_linker.h:
 
 /usr/include/google/protobuf/stubs/common.h:
+
+/usr/include/x86_64-linux-gnu/c++/13/bits/os_defines.h:
+
+/usr/include/google/protobuf/port.h:
+
+/usr/include/c++/13/bits/uses_allocator_args.h:
+
+/usr/include/x86_64-linux-gnu/bits/types/wint_t.h:
+
+/usr/include/c++/13/bits/stl_algo.h:
+
+/usr/include/c++/13/bits/stl_tempbuf.h:
+
+/usr/include/google/protobuf/generated_message_util.h:
 
 /usr/include/c++/13/bits/unordered_map.h:
 
@@ -1090,13 +1077,17 @@ rpc/CMakeFiles/server.dir/src/server.cc.o:
 
 /usr/include/c++/13/debug/assertions.h:
 
-/usr/include/c++/13/cstring:
+/usr/lib/x86_64-linux-gnu/libprotobuf.so:
 
-/usr/include/c++/13/bits/unordered_set.h:
+/usr/local/include/butil/containers/hash_tables.h:
 
-/usr/include/c++/13/bits/semaphore_base.h:
+/usr/include/c++/13/tr1/beta_function.tcc:
 
-/usr/include/c++/13/bits/charconv.h:
+/usr/include/c++/13/ext/hash_map:
+
+/usr/local/include/butil/object_pool_inl.h:
+
+/usr/include/c++/13/tr1/ell_integral.tcc:
 
 /usr/local/include/butil/debug/address_annotations.h:
 
@@ -1106,35 +1097,33 @@ rpc/CMakeFiles/server.dir/src/server.cc.o:
 
 /usr/include/c++/13/bits/requires_hosted.h:
 
-/usr/include/c++/13/bits/exception_defines.h:
+/usr/local/include/butil/scoped_generic.h:
+
+/usr/include/c++/13/ios:
+
+/usr/include/google/protobuf/stubs/port.h:
 
 /usr/include/c++/13/bits/functional_hash.h:
+
+/usr/include/c++/13/bits/exception_defines.h:
 
 /usr/include/c++/13/cstddef:
 
 /usr/include/c++/13/mutex:
 
-/usr/include/c++/13/bits/ranges_util.h:
+/usr/include/x86_64-linux-gnu/bits/byteswap.h:
 
-/usr/local/include/bvar/gflag.h:
+/usr/include/c++/13/vector:
 
-/usr/include/c++/13/bits/stringfwd.h:
+/usr/include/x86_64-linux-gnu/c++/13/bits/atomic_word.h:
 
-/usr/include/c++/13/bits/ranges_cmp.h:
+/usr/include/c++/13/array:
 
-/usr/include/x86_64-linux-gnu/bits/math-vector.h:
+/usr/include/x86_64-linux-gnu/bits/typesizes.h:
 
-/usr/include/features-time64.h:
+/root/Monitor/monitor/include/util.h:
 
-/usr/include/c++/13/bits/ranges_algobase.h:
-
-/usr/include/c++/13/bits/vector.tcc:
-
-/usr/include/math.h:
-
-/usr/include/c++/13/cstdint:
-
-/usr/include/c++/13/bits/sstream.tcc:
+/usr/include/pthread.h:
 
 /usr/include/x86_64-linux-gnu/c++/13/bits/ctype_inline.h:
 
@@ -1142,23 +1131,9 @@ rpc/CMakeFiles/server.dir/src/server.cc.o:
 
 /usr/include/c++/13/bits/algorithmfwd.h:
 
-/usr/include/c++/13/bits/parse_numbers.h:
+/usr/include/c++/13/bits/sstream.tcc:
 
-/usr/local/include/brpc/authenticator.h:
-
-/usr/include/c++/13/bits/specfun.h:
-
-/usr/include/c++/13/backward/backward_warning.h:
-
-/usr/include/c++/13/bits/node_handle.h:
-
-/usr/include/google/protobuf/stubs/strutil.h:
-
-/usr/include/c++/13/bits/ranges_algo.h:
-
-/usr/include/c++/13/bits/shared_ptr_base.h:
-
-/usr/include/pthread.h:
+/usr/include/x86_64-linux-gnu/bits/sched.h:
 
 /usr/include/c++/13/bits/enable_special_members.h:
 
@@ -1170,111 +1145,31 @@ rpc/CMakeFiles/server.dir/src/server.cc.o:
 
 /usr/include/c++/13/backward/auto_ptr.h:
 
-/usr/include/c++/13/bits/hashtable.h:
+/usr/include/c++/13/bits/refwrap.h:
 
-/usr/include/c++/13/bits/max_size_type.h:
+/usr/include/c++/13/bits/stream_iterator.h:
+
+/usr/include/c++/13/bits/align.h:
 
 /usr/include/c++/13/atomic:
-
-/usr/lib/gcc/x86_64-linux-gnu/13/include/stdarg.h:
-
-/root/Monitor/protocol/message/service.pb.h:
 
 /usr/include/x86_64-linux-gnu/bits/struct_rwlock.h:
 
 /root/Monitor/protocol/message/cpu_load.pb.h:
 
+/usr/lib/gcc/x86_64-linux-gnu/13/include/stdarg.h:
+
+/root/Monitor/protocol/message/service.pb.h:
+
 /usr/local/include/brpc/interceptor.h:
 
 /usr/include/c++/13/tr1/bessel_function.tcc:
-
-/root/Monitor/monitor/include/cpu_softirq.h:
-
-/usr/local/include/brpc/uri.h:
-
-/usr/include/c++/13/bits/ranges_uninitialized.h:
 
 /usr/include/x86_64-linux-gnu/bits/unistd-decl.h:
 
 /usr/include/c++/13/bits/ptr_traits.h:
 
 /usr/include/c++/13/bits/istream.tcc:
-
-/usr/local/include/butil/containers/doubly_buffered_data.h:
-
-/usr/include/c++/13/backward/binders.h:
-
-/usr/local/lib/libbrpc.a:
-
-/usr/local/include/brpc/parse_result.h:
-
-/usr/include/google/protobuf/implicit_weak_message.h:
-
-/usr/include/google/protobuf/stubs/stl_util.h:
-
-/usr/include/byteswap.h:
-
-/usr/include/c++/13/bits/refwrap.h:
-
-/usr/include/c++/13/bits/align.h:
-
-/usr/include/c++/13/bits/stream_iterator.h:
-
-/usr/include/x86_64-linux-gnu/bits/byteswap.h:
-
-/usr/include/c++/13/vector:
-
-/usr/lib/x86_64-linux-gnu/libc.so:
-
-monitor/libmonitor.so:
-
-/usr/local/include/brpc/progressive_attachment.h:
-
-/usr/include/c++/13/bits/std_function.h:
-
-/usr/include/asm-generic/posix_types.h:
-
-/usr/include/c++/13/cctype:
-
-/usr/local/include/brpc/adaptive_protocol_type.h:
-
-/usr/include/x86_64-linux-gnu/bits/types/timer_t.h:
-
-/usr/include/asm-generic/errno-base.h:
-
-/usr/include/c++/13/list:
-
-/usr/include/c++/13/bits/basic_string.h:
-
-/usr/include/c++/13/bits/uses_allocator.h:
-
-/usr/include/x86_64-linux-gnu/c++/13/bits/os_defines.h:
-
-/usr/include/google/protobuf/port.h:
-
-/usr/include/c++/13/bits/uses_allocator_args.h:
-
-/usr/local/include/brpc/serialized_request.h:
-
-/usr/include/c++/13/bits/stl_iterator_base_funcs.h:
-
-/usr/include/c++/13/bits/new_allocator.h:
-
-/usr/include/c++/13/cstdlib:
-
-/usr/include/c++/13/stdexcept:
-
-/usr/include/c++/13/deque:
-
-/usr/include/c++/13/bits/chrono.h:
-
-/usr/lib/x86_64-linux-gnu/libm.so:
-
-/usr/include/x86_64-linux-gnu/bits/select-decl.h:
-
-/usr/include/c++/13/bits/ranges_base.h:
-
-/usr/include/c++/13/string:
 
 /usr/include/c++/13/tr1/hypergeometric.tcc:
 
@@ -1286,29 +1181,127 @@ monitor/libmonitor.so:
 
 /usr/include/c++/13/set:
 
-/usr/include/c++/13/bits/atomic_wait.h:
-
 /usr/local/include/butil/class_name.h:
 
 /usr/include/c++/13/bits/alloc_traits.h:
 
-/usr/local/include/butil/memory/scope_guard.h:
+/usr/include/x86_64-linux-gnu/bits/types/struct_iovec.h:
 
-/usr/include/c++/13/bits/stl_set.h:
+/usr/include/x86_64-linux-gnu/bits/mathcalls.h:
 
-/usr/include/x86_64-linux-gnu/c++/13/bits/atomic_word.h:
+/usr/local/include/butil/containers/doubly_buffered_data.h:
 
-/usr/include/c++/13/array:
+/usr/include/c++/13/backward/binders.h:
 
-/usr/include/x86_64-linux-gnu/bits/typesizes.h:
+/usr/local/lib/libbrpc.a:
 
-/root/Monitor/monitor/include/util.h:
+/usr/local/include/brpc/parse_result.h:
 
-/usr/include/x86_64-linux-gnu/bits/strings_fortified.h:
+/usr/include/google/protobuf/implicit_weak_message.h:
 
-/usr/include/c++/13/cwchar:
+/usr/include/google/protobuf/service.h:
 
-/usr/include/asm-generic/errno.h:
+/usr/local/include/brpc/redis_reply.h:
+
+/usr/include/x86_64-linux-gnu/bits/cpu-set.h:
+
+/usr/local/include/butil/object_pool.h:
+
+/usr/include/google/protobuf/generated_message_bases.h:
+
+/usr/include/c++/13/bits/atomic_lockfree_defines.h:
+
+/usr/include/x86_64-linux-gnu/bits/fp-logb.h:
+
+/usr/include/google/protobuf/generated_enum_util.h:
+
+/usr/include/c++/13/bits/basic_ios.tcc:
+
+/usr/include/google/protobuf/stubs/callback.h:
+
+/usr/include/google/protobuf/stubs/logging.h:
+
+/usr/include/x86_64-linux-gnu/bits/stdlib.h:
+
+/usr/include/c++/13/functional:
+
+/usr/include/c++/13/bits/allocator.h:
+
+/usr/include/gflags/gflags.h:
+
+/usr/include/google/protobuf/repeated_field.h:
+
+/usr/include/c++/13/bits/locale_facets.tcc:
+
+/usr/local/include/butil/compiler_specific.h:
+
+/usr/include/x86_64-linux-gnu/asm/bitsperlong.h:
+
+/usr/include/c++/13/ext/type_traits.h:
+
+/usr/include/c++/13/exception:
+
+/root/Monitor/monitor/include/base.h:
+
+/usr/include/c++/13/backward/hashtable.h:
+
+/usr/include/c++/13/initializer_list:
+
+/usr/include/errno.h:
+
+/usr/include/c++/13/ext/concurrence.h:
+
+/usr/include/c++/13/bits/fstream.tcc:
+
+/usr/include/c++/13/bits/codecvt.h:
+
+/usr/include/google/protobuf/explicitly_constructed.h:
+
+/usr/include/x86_64-linux-gnu/bits/fp-fast.h:
+
+/usr/lib/x86_64-linux-gnu/libc.so:
+
+monitor/libmonitor.so:
+
+/usr/local/include/brpc/progressive_attachment.h:
+
+/usr/include/c++/13/bits/std_function.h:
+
+/usr/include/asm-generic/socket.h:
+
+/usr/include/c++/13/ext/alloc_traits.h:
+
+/usr/include/google/protobuf/generated_enum_reflection.h:
+
+/usr/include/c++/13/bits/stl_relops.h:
+
+/usr/include/c++/13/bits/atomic_base.h:
+
+/usr/include/x86_64-linux-gnu/bits/time64.h:
+
+/usr/include/x86_64-linux-gnu/bits/atomic_wide_counter.h:
+
+/usr/include/x86_64-linux-gnu/bits/floatn-common.h:
+
+/usr/include/c++/13/bits/functexcept.h:
+
+/usr/include/c++/13/cctype:
+
+/usr/local/include/brpc/adaptive_protocol_type.h:
+
+/usr/include/x86_64-linux-gnu/bits/types/timer_t.h:
+
+/usr/include/asm-generic/errno-base.h:
+
+/usr/include/c++/13/list:
+
+/usr/include/c++/13/bits/uses_allocator.h:
+
+/usr/include/c++/13/bits/basic_string.h:
+
+/usr/local/include/butil/bit_array.h:
+
+/usr/include/c++/13/iosfwd:
 
 /usr/local/include/brpc/extension_inl.h:
 
@@ -1326,99 +1319,31 @@ monitor/libmonitor.so:
 
 /usr/include/x86_64-linux-gnu/asm/errno.h:
 
+/usr/include/x86_64-linux-gnu/bits/strings_fortified.h:
+
+/usr/include/c++/13/cwchar:
+
+/usr/include/asm-generic/errno.h:
+
+/usr/include/c++/13/bits/stl_raw_storage_iter.h:
+
+/usr/include/x86_64-linux-gnu/bits/posix2_lim.h:
+
+/usr/include/asm-generic/posix_types.h:
+
+/usr/include/c++/13/compare:
+
+/usr/include/x86_64-linux-gnu/bits/setjmp.h:
+
+/usr/include/c++/13/bits/charconv.h:
+
+/usr/include/c++/13/tr1/legendre_function.tcc:
+
 /usr/include/c++/13/bits/stl_tree.h:
 
 /usr/include/c++/13/bits/deque.tcc:
 
-/usr/include/c++/13/bits/atomic_lockfree_defines.h:
-
-/usr/include/x86_64-linux-gnu/bits/fp-logb.h:
-
-/usr/include/x86_64-linux-gnu/bits/types/wint_t.h:
-
-/usr/include/c++/13/bits/stl_algo.h:
-
-/usr/include/c++/13/bits/stl_tempbuf.h:
-
-/usr/include/google/protobuf/generated_message_util.h:
-
-/usr/include/asm-generic/socket.h:
-
-/usr/include/c++/13/ext/alloc_traits.h:
-
-/usr/include/google/protobuf/generated_enum_reflection.h:
-
-/usr/include/c++/13/bits/stl_relops.h:
-
-/usr/include/c++/13/bits/functexcept.h:
-
-/usr/include/c++/13/bits/atomic_base.h:
-
-/usr/include/x86_64-linux-gnu/bits/time64.h:
-
-/usr/include/x86_64-linux-gnu/bits/atomic_wide_counter.h:
-
-/usr/include/x86_64-linux-gnu/bits/floatn-common.h:
-
-/root/Monitor/monitor/include/base.h:
-
-/usr/include/c++/13/bits/locale_facets.tcc:
-
-/usr/include/google/protobuf/service.h:
-
-/usr/local/include/brpc/redis_reply.h:
-
-/usr/include/x86_64-linux-gnu/bits/cpu-set.h:
-
-/root/Monitor/monitor/include/cpu_stat.h:
-
-/usr/include/c++/13/bits/move.h:
-
-/usr/include/c++/13/bits/char_traits.h:
-
-/usr/local/include/butil/object_pool.h:
-
-/usr/include/google/protobuf/generated_message_bases.h:
-
-/usr/include/c++/13/bits/stl_raw_storage_iter.h:
-
-/usr/include/c++/13/bits/allocator.h:
-
-/usr/include/c++/13/bits/iterator_concepts.h:
-
-/usr/include/x86_64-linux-gnu/bits/stdlib.h:
-
-/usr/include/c++/13/functional:
-
-/usr/include/gflags/gflags.h:
-
-/usr/include/google/protobuf/repeated_field.h:
-
-/usr/include/google/protobuf/generated_enum_util.h:
-
-/root/Monitor/monitor/include/net_info.h:
-
-/usr/include/c++/13/bits/basic_ios.tcc:
-
-/usr/include/google/protobuf/stubs/callback.h:
-
-/usr/include/google/protobuf/stubs/logging.h:
-
-/usr/include/c++/13/tr1/legendre_function.tcc:
-
-/usr/include/x86_64-linux-gnu/bits/posix1_lim.h:
-
-/usr/include/c++/13/bits/atomic_timed_wait.h:
-
-/usr/include/c++/13/bits/fstream.tcc:
-
-/usr/include/c++/13/bits/codecvt.h:
-
-/usr/include/c++/13/ext/concurrence.h:
-
-/usr/include/google/protobuf/explicitly_constructed.h:
-
-/usr/include/x86_64-linux-gnu/bits/fp-fast.h:
+/usr/include/c++/13/bits/parse_numbers.h:
 
 /usr/include/c++/13/bits/cxxabi_forced.h:
 
@@ -1430,13 +1355,9 @@ monitor/libmonitor.so:
 
 /usr/include/c++/13/ostream:
 
+/usr/include/c++/13/istream:
+
 /usr/include/c++/13/bits/exception_ptr.h:
-
-/usr/include/x86_64-linux-gnu/bits/pthreadtypes-arch.h:
-
-/usr/include/c++/13/bits/stl_vector.h:
-
-/usr/include/string.h:
 
 /usr/include/c++/13/bits/erase_if.h:
 
@@ -1446,21 +1367,19 @@ monitor/libmonitor.so:
 
 /usr/include/c++/13/bits/ios_base.h:
 
-/usr/include/x86_64-linux-gnu/bits/types/struct_itimerspec.h:
-
-/usr/include/c++/13/semaphore:
-
 /usr/include/google/protobuf/port_def.inc:
 
 /usr/include/c++/13/bits/list.tcc:
 
-/usr/include/c++/13/bits/cpp_type_traits.h:
-
-/root/Monitor/protocol/message/net_info.pb.h:
-
 /usr/include/stdio.h:
 
 /usr/include/c++/13/bits/hash_bytes.h:
+
+/usr/include/x86_64-linux-gnu/bits/socket2.h:
+
+/usr/include/c++/13/bits/cpp_type_traits.h:
+
+/root/Monitor/protocol/message/net_info.pb.h:
 
 /usr/include/c++/13/bits/stl_iterator_base_types.h:
 
@@ -1476,12 +1395,6 @@ monitor/libmonitor.so:
 
 /usr/include/google/protobuf/io/coded_stream.h:
 
-/lib/x86_64-linux-gnu/libsnappy.so.1:
-
-/usr/include/x86_64-linux-gnu/bits/select.h:
-
-/usr/include/c++/13/bits/memory_resource.h:
-
 /usr/include/x86_64-linux-gnu/bits/types/__FILE.h:
 
 /usr/include/c++/13/bits/basic_string.tcc:
@@ -1492,67 +1405,37 @@ monitor/libmonitor.so:
 
 /usr/include/google/protobuf/generated_message_reflection.h:
 
-/usr/include/c++/13/ext/atomicity.h:
+/usr/include/x86_64-linux-gnu/bits/posix1_lim.h:
 
-/usr/lib/x86_64-linux-gnu/libprotobuf.so:
+/usr/include/c++/13/bits/shared_ptr_base.h:
 
-/usr/local/include/butil/containers/hash_tables.h:
+/usr/include/c++/13/bits/char_traits.h:
 
-/usr/include/c++/13/tr1/beta_function.tcc:
+/usr/include/c++/13/bits/move.h:
 
-/usr/include/c++/13/ext/hash_map:
+/usr/include/google/protobuf/stubs/strutil.h:
 
-/usr/local/include/butil/object_pool_inl.h:
+/usr/local/include/brpc/serialized_request.h:
 
-/usr/include/c++/13/tr1/ell_integral.tcc:
+/usr/include/c++/13/bits/stl_iterator_base_funcs.h:
 
-/usr/include/x86_64-linux-gnu/bits/types/sigset_t.h:
+/usr/include/c++/13/deque:
 
-/usr/include/c++/13/ext/hash_set:
+/usr/include/c++/13/bits/chrono.h:
 
-/usr/local/include/brpc/redis.h:
+/usr/include/c++/13/bits/new_allocator.h:
 
-/usr/include/c++/13/climits:
+/usr/include/c++/13/cstdlib:
 
-/usr/include/c++/13/ext/numeric_traits.h:
+/usr/include/c++/13/stdexcept:
 
-/usr/include/c++/13/bits/stl_heap.h:
+/usr/include/c++/13/bits/node_handle.h:
 
-/usr/include/c++/13/ext/string_conversions.h:
+/usr/local/include/brpc/authenticator.h:
 
-/usr/local/include/butil/compiler_specific.h:
+/usr/include/c++/13/backward/backward_warning.h:
 
-/usr/include/x86_64-linux-gnu/asm/bitsperlong.h:
-
-/usr/include/c++/13/exception:
-
-/usr/include/c++/13/ext/type_traits.h:
-
-/usr/include/c++/13/backward/hashtable.h:
-
-/usr/include/c++/13/initializer_list:
-
-/usr/include/errno.h:
-
-/usr/local/include/butil/scoped_generic.h:
-
-/usr/include/c++/13/ios:
-
-/usr/include/google/protobuf/stubs/port.h:
-
-/usr/include/semaphore.h:
-
-/usr/local/include/butil/bit_array.h:
-
-/usr/include/c++/13/iosfwd:
-
-/usr/include/c++/13/iostream:
-
-/usr/include/c++/13/istream:
-
-/usr/local/include/brpc/versioned_ref_with_id.h:
-
-/usr/include/c++/13/limits:
+/usr/include/c++/13/bits/specfun.h:
 
 /usr/local/include/butil/containers/case_ignored_flat_map.h:
 
@@ -1569,6 +1452,14 @@ monitor/libmonitor.so:
 /usr/include/x86_64-linux-gnu/bits/types/error_t.h:
 
 /usr/include/c++/13/new:
+
+/usr/include/x86_64-linux-gnu/bits/libm-simd-decl-stubs.h:
+
+/lib/x86_64-linux-gnu/libsnappy.so.1:
+
+/usr/include/c++/13/bits/memory_resource.h:
+
+/usr/include/x86_64-linux-gnu/bits/select.h:
 
 /usr/include/x86_64-linux-gnu/bits/select2.h:
 
@@ -1593,8 +1484,6 @@ monitor/libmonitor.so:
 /usr/include/c++/13/pstl/pstl_config.h:
 
 /lib/x86_64-linux-gnu/libz.so.1:
-
-/usr/include/x86_64-linux-gnu/asm/unistd.h:
 
 /usr/include/google/protobuf/stubs/status.h:
 
@@ -1634,21 +1523,17 @@ monitor/libmonitor.so:
 
 /usr/include/c++/13/tr1/poly_laguerre.tcc:
 
-/usr/local/include/bvar/status.h:
-
-/usr/include/x86_64-linux-gnu/asm/unistd_64.h:
-
 /usr/include/c++/13/tr1/riemann_zeta.tcc:
 
 /usr/include/c++/13/tr1/special_function_util.h:
 
 /usr/include/x86_64-linux-gnu/bits/uio-ext.h:
 
+/usr/include/c++/13/fstream:
+
 /usr/include/c++/13/bits/predefined_ops.h:
 
 /usr/include/c++/13/bits/exception.h:
-
-/usr/include/c++/13/fstream:
 
 /usr/include/c++/13/type_traits:
 
@@ -1676,6 +1561,14 @@ monitor/libmonitor.so:
 
 /usr/include/endian.h:
 
+/usr/include/x86_64-linux-gnu/bits/math-vector.h:
+
+/usr/include/features-time64.h:
+
+/usr/include/byteswap.h:
+
+/usr/include/google/protobuf/stubs/stl_util.h:
+
 /usr/include/features.h:
 
 /usr/include/google/protobuf/stubs/hash.h:
@@ -1685,6 +1578,8 @@ monitor/libmonitor.so:
 /usr/local/include/butil/iobuf.h:
 
 /usr/include/google/protobuf/any.h:
+
+/usr/include/google/protobuf/arena.h:
 
 /usr/local/include/butil/synchronization/lock.h:
 
@@ -1720,8 +1615,6 @@ protocol/libmessage.so:
 
 /usr/include/google/protobuf/inlined_string_field.h:
 
-/usr/include/c++/13/stop_token:
-
 /usr/include/google/protobuf/io/zero_copy_stream.h:
 
 /usr/include/x86_64-linux-gnu/bits/endian.h:
@@ -1741,8 +1634,6 @@ protocol/libmessage.so:
 /usr/local/include/brpc/closure_guard.h:
 
 /usr/include/x86_64-linux-gnu/bits/libc-header-start.h:
-
-/usr/include/c++/13/numbers:
 
 /usr/include/google/protobuf/map_type_handler.h:
 
@@ -1764,9 +1655,9 @@ protocol/libmessage.so:
 
 /usr/include/x86_64-linux-gnu/bits/types/FILE.h:
 
-/root/Monitor/monitor/include/mem_info.h:
-
 /usr/include/google/protobuf/port_undef.inc:
+
+/usr/include/x86_64-linux-gnu/bits/local_lim.h:
 
 /usr/include/stdc-predef.h:
 
@@ -1775,6 +1666,8 @@ protocol/libmessage.so:
 /usr/include/c++/13/ext/aligned_buffer.h:
 
 /usr/include/unistd.h:
+
+/usr/include/x86_64-linux-gnu/bits/mathcalls-narrow.h:
 
 /usr/include/google/protobuf/stubs/platform_macros.h:
 
@@ -1834,10 +1727,6 @@ protocol/libmessage.so:
 
 /usr/include/strings.h:
 
-/usr/include/google/protobuf/arena.h:
-
-/usr/include/syscall.h:
-
 /usr/include/c++/13/bit:
 
 /usr/include/time.h:
@@ -1850,6 +1739,12 @@ protocol/libmessage.so:
 
 /usr/include/x86_64-linux-gnu/asm/sockios.h:
 
+/usr/lib/x86_64-linux-gnu/libm.so:
+
+/usr/include/c++/13/string:
+
+/usr/include/x86_64-linux-gnu/bits/select-decl.h:
+
 /usr/include/x86_64-linux-gnu/bits/environments.h:
 
 /usr/lib/x86_64-linux-gnu/libgcc_s.so.1:
@@ -1860,6 +1755,8 @@ protocol/libmessage.so:
 
 /usr/include/x86_64-linux-gnu/bits/floatn.h:
 
+/usr/include/x86_64-linux-gnu/bits/pthread_stack_min-dynamic.h:
+
 /usr/include/x86_64-linux-gnu/bits/flt-eval-method.h:
 
 /usr/lib/x86_64-linux-gnu/libcrypto.so:
@@ -1869,3 +1766,25 @@ protocol/libmessage.so:
 /usr/include/x86_64-linux-gnu/bits/getopt_core.h:
 
 /usr/include/x86_64-linux-gnu/bits/iscanonical.h:
+
+/usr/include/x86_64-linux-gnu/bits/long-double.h:
+
+/usr/local/include/butil/arena.h:
+
+/usr/include/x86_64-linux-gnu/bits/mathcalls-helper-functions.h:
+
+/usr/include/x86_64-linux-gnu/bits/posix_opt.h:
+
+/usr/include/c++/13/bits/stl_vector.h:
+
+/usr/include/string.h:
+
+/usr/include/x86_64-linux-gnu/bits/pthreadtypes-arch.h:
+
+/usr/include/x86_64-linux-gnu/bits/sockaddr.h:
+
+/usr/include/x86_64-linux-gnu/bits/socket.h:
+
+/usr/include/x86_64-linux-gnu/bits/socket_type.h:
+
+/usr/include/x86_64-linux-gnu/bits/stdint-intn.h:

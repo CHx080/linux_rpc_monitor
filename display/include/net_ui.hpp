@@ -7,7 +7,7 @@
 #include <unordered_map>
 #include <unordered_set>
 
-class NetUI : public QWidget, public UI {
+class NetUI : public UI {
   enum Field {
     DEV,
     R_BYTES,
@@ -30,7 +30,7 @@ class NetUI : public QWidget, public UI {
   };
 
 public:
-  NetUI(QWidget *parent = nullptr) : QWidget(parent) {
+  NetUI(QWidget *parent = nullptr) : UI(parent) {
     model.setHorizontalHeaderLabels(
         {"dev", "bytes", "packets", "errs", "drop", "fifo", "frame",
          "compressed", "multicast", "rx<--->tx", "bytes", "packets", "errs",
@@ -42,6 +42,7 @@ public:
     setWindowTitle("Net");
     resize(1000, 500);
   }
+
   void refresh(Monitor::MonitorInfo *info) override {
     auto net_info = info->net_info();
     int num = net_info.size();
