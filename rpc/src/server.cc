@@ -19,7 +19,7 @@ public:
     std::thread t1([response, this]() { this->mem_monitor.update(response); });
     std::thread t2([response, this]() { this->net_monitor.update(response); });
     std::thread t3([response, this]() {
-      this->stat_monitor.update(response);
+      this->stat_monitor.update(response); // stat必须先于sriq检测
       this->sirq_monitor.update(response);
     });
     t0.join();
@@ -41,7 +41,10 @@ public:
     server.AddService(new RpcServiceImpl,
                       brpc::ServiceOwnership::SERVER_OWNS_SERVICE);
     //......
-    server.Start(port, nullptr);
+    if (not server.Start(port, nullptr)) {
+      std::cerr << "fail start,check the port number!\n";
+      exit(EXIT_FAILURE);
+    }
     server.RunUntilAskedToQuit();
   }
   RpcServer(const RpcServer &) = delete;
@@ -52,9 +55,13 @@ private:
 };
 
 int main(int argc, char *argv[]) {
+  if (argc != 2) {
+    std::cerr << "Usage: [executable] [port] \n";
+    exit(EXIT_FAILURE);
+  }
   logging::LoggingSettings settings;
   settings.logging_dest = logging::LoggingDestination::LOG_TO_NONE;
   logging::InitLogging(settings);
   RpcServer instance(atoi(argv[1]));
-  return 0;
+  return EXIT_FAILURE;
 }
