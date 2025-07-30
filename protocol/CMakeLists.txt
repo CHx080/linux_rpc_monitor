@@ -33,4 +33,4 @@ endforeach()
 
 add_library(message SHARED ${MESSAGE_SRC}) 
 target_include_directories(message PUBLIC ${RES_DIR})  
-target_link_libraries(message PRIVATE protobuf::libprotobuf) 
+target_link_libraries(message PRIVATE ${Protobuf_LIBRARIES}) 

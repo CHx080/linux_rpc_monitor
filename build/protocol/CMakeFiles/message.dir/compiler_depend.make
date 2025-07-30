@@ -9,7 +9,6 @@ protocol/CMakeFiles/message.dir/message/cpu_load.pb.cc.o: /root/Monitor/protocol
   /usr/include/assert.h \
   /usr/include/byteswap.h \
   /usr/include/c++/13/algorithm \
-  /usr/include/c++/13/array \
   /usr/include/c++/13/atomic \
   /usr/include/c++/13/backward/auto_ptr.h \
   /usr/include/c++/13/backward/binders.h \
@@ -50,12 +49,10 @@ protocol/CMakeFiles/message.dir/message/cpu_load.pb.cc.o: /root/Monitor/protocol
   /usr/include/c++/13/bits/locale_facets.h \
   /usr/include/c++/13/bits/locale_facets.tcc \
   /usr/include/c++/13/bits/localefwd.h \
-  /usr/include/c++/13/bits/memory_resource.h \
   /usr/include/c++/13/bits/memoryfwd.h \
   /usr/include/c++/13/bits/move.h \
   /usr/include/c++/13/bits/nested_exception.h \
   /usr/include/c++/13/bits/new_allocator.h \
-  /usr/include/c++/13/bits/node_handle.h \
   /usr/include/c++/13/bits/ostream.tcc \
   /usr/include/c++/13/bits/ostream_insert.h \
   /usr/include/c++/13/bits/parse_numbers.h \
@@ -94,7 +91,6 @@ protocol/CMakeFiles/message.dir/message/cpu_load.pb.cc.o: /root/Monitor/protocol
   /usr/include/c++/13/bits/stream_iterator.h \
   /usr/include/c++/13/bits/streambuf.tcc \
   /usr/include/c++/13/bits/streambuf_iterator.h \
-  /usr/include/c++/13/bits/string_view.tcc \
   /usr/include/c++/13/bits/stringfwd.h \
   /usr/include/c++/13/bits/uniform_int_dist.h \
   /usr/include/c++/13/bits/unique_lock.h \
@@ -102,7 +98,6 @@ protocol/CMakeFiles/message.dir/message/cpu_load.pb.cc.o: /root/Monitor/protocol
   /usr/include/c++/13/bits/unordered_map.h \
   /usr/include/c++/13/bits/unordered_set.h \
   /usr/include/c++/13/bits/uses_allocator.h \
-  /usr/include/c++/13/bits/uses_allocator_args.h \
   /usr/include/c++/13/bits/utility.h \
   /usr/include/c++/13/bits/vector.tcc \
   /usr/include/c++/13/cassert \
@@ -110,7 +105,6 @@ protocol/CMakeFiles/message.dir/message/cpu_load.pb.cc.o: /root/Monitor/protocol
   /usr/include/c++/13/cerrno \
   /usr/include/c++/13/climits \
   /usr/include/c++/13/clocale \
-  /usr/include/c++/13/compare \
   /usr/include/c++/13/cstddef \
   /usr/include/c++/13/cstdint \
   /usr/include/c++/13/cstdio \
@@ -142,17 +136,12 @@ protocol/CMakeFiles/message.dir/message/cpu_load.pb.cc.o: /root/Monitor/protocol
   /usr/include/c++/13/mutex \
   /usr/include/c++/13/new \
   /usr/include/c++/13/ostream \
-  /usr/include/c++/13/pstl/execution_defs.h \
-  /usr/include/c++/13/pstl/glue_algorithm_defs.h \
-  /usr/include/c++/13/pstl/glue_memory_defs.h \
-  /usr/include/c++/13/pstl/pstl_config.h \
   /usr/include/c++/13/ratio \
   /usr/include/c++/13/set \
   /usr/include/c++/13/stdexcept \
   /usr/include/c++/13/stdlib.h \
   /usr/include/c++/13/streambuf \
   /usr/include/c++/13/string \
-  /usr/include/c++/13/string_view \
   /usr/include/c++/13/system_error \
   /usr/include/c++/13/tuple \
   /usr/include/c++/13/type_traits \
@@ -338,7 +327,6 @@ protocol/CMakeFiles/message.dir/message/cpu_softirq.pb.cc.o: /root/Monitor/proto
   /usr/include/assert.h \
   /usr/include/byteswap.h \
   /usr/include/c++/13/algorithm \
-  /usr/include/c++/13/array \
   /usr/include/c++/13/atomic \
   /usr/include/c++/13/backward/auto_ptr.h \
   /usr/include/c++/13/backward/binders.h \
@@ -379,12 +367,10 @@ protocol/CMakeFiles/message.dir/message/cpu_softirq.pb.cc.o: /root/Monitor/proto
   /usr/include/c++/13/bits/locale_facets.h \
   /usr/include/c++/13/bits/locale_facets.tcc \
   /usr/include/c++/13/bits/localefwd.h \
-  /usr/include/c++/13/bits/memory_resource.h \
   /usr/include/c++/13/bits/memoryfwd.h \
   /usr/include/c++/13/bits/move.h \
   /usr/include/c++/13/bits/nested_exception.h \
   /usr/include/c++/13/bits/new_allocator.h \
-  /usr/include/c++/13/bits/node_handle.h \
   /usr/include/c++/13/bits/ostream.tcc \
   /usr/include/c++/13/bits/ostream_insert.h \
   /usr/include/c++/13/bits/parse_numbers.h \
@@ -423,7 +409,6 @@ protocol/CMakeFiles/message.dir/message/cpu_softirq.pb.cc.o: /root/Monitor/proto
   /usr/include/c++/13/bits/stream_iterator.h \
   /usr/include/c++/13/bits/streambuf.tcc \
   /usr/include/c++/13/bits/streambuf_iterator.h \
-  /usr/include/c++/13/bits/string_view.tcc \
   /usr/include/c++/13/bits/stringfwd.h \
   /usr/include/c++/13/bits/uniform_int_dist.h \
   /usr/include/c++/13/bits/unique_lock.h \
@@ -431,7 +416,6 @@ protocol/CMakeFiles/message.dir/message/cpu_softirq.pb.cc.o: /root/Monitor/proto
   /usr/include/c++/13/bits/unordered_map.h \
   /usr/include/c++/13/bits/unordered_set.h \
   /usr/include/c++/13/bits/uses_allocator.h \
-  /usr/include/c++/13/bits/uses_allocator_args.h \
   /usr/include/c++/13/bits/utility.h \
   /usr/include/c++/13/bits/vector.tcc \
   /usr/include/c++/13/cassert \
@@ -439,7 +423,6 @@ protocol/CMakeFiles/message.dir/message/cpu_softirq.pb.cc.o: /root/Monitor/proto
   /usr/include/c++/13/cerrno \
   /usr/include/c++/13/climits \
   /usr/include/c++/13/clocale \
-  /usr/include/c++/13/compare \
   /usr/include/c++/13/cstddef \
   /usr/include/c++/13/cstdint \
   /usr/include/c++/13/cstdio \
@@ -471,17 +454,12 @@ protocol/CMakeFiles/message.dir/message/cpu_softirq.pb.cc.o: /root/Monitor/proto
   /usr/include/c++/13/mutex \
   /usr/include/c++/13/new \
   /usr/include/c++/13/ostream \
-  /usr/include/c++/13/pstl/execution_defs.h \
-  /usr/include/c++/13/pstl/glue_algorithm_defs.h \
-  /usr/include/c++/13/pstl/glue_memory_defs.h \
-  /usr/include/c++/13/pstl/pstl_config.h \
   /usr/include/c++/13/ratio \
   /usr/include/c++/13/set \
   /usr/include/c++/13/stdexcept \
   /usr/include/c++/13/stdlib.h \
   /usr/include/c++/13/streambuf \
   /usr/include/c++/13/string \
-  /usr/include/c++/13/string_view \
   /usr/include/c++/13/system_error \
   /usr/include/c++/13/tuple \
   /usr/include/c++/13/type_traits \
@@ -667,7 +645,6 @@ protocol/CMakeFiles/message.dir/message/cpu_stat.pb.cc.o: /root/Monitor/protocol
   /usr/include/assert.h \
   /usr/include/byteswap.h \
   /usr/include/c++/13/algorithm \
-  /usr/include/c++/13/array \
   /usr/include/c++/13/atomic \
   /usr/include/c++/13/backward/auto_ptr.h \
   /usr/include/c++/13/backward/binders.h \
@@ -708,12 +685,10 @@ protocol/CMakeFiles/message.dir/message/cpu_stat.pb.cc.o: /root/Monitor/protocol
   /usr/include/c++/13/bits/locale_facets.h \
   /usr/include/c++/13/bits/locale_facets.tcc \
   /usr/include/c++/13/bits/localefwd.h \
-  /usr/include/c++/13/bits/memory_resource.h \
   /usr/include/c++/13/bits/memoryfwd.h \
   /usr/include/c++/13/bits/move.h \
   /usr/include/c++/13/bits/nested_exception.h \
   /usr/include/c++/13/bits/new_allocator.h \
-  /usr/include/c++/13/bits/node_handle.h \
   /usr/include/c++/13/bits/ostream.tcc \
   /usr/include/c++/13/bits/ostream_insert.h \
   /usr/include/c++/13/bits/parse_numbers.h \
@@ -752,7 +727,6 @@ protocol/CMakeFiles/message.dir/message/cpu_stat.pb.cc.o: /root/Monitor/protocol
   /usr/include/c++/13/bits/stream_iterator.h \
   /usr/include/c++/13/bits/streambuf.tcc \
   /usr/include/c++/13/bits/streambuf_iterator.h \
-  /usr/include/c++/13/bits/string_view.tcc \
   /usr/include/c++/13/bits/stringfwd.h \
   /usr/include/c++/13/bits/uniform_int_dist.h \
   /usr/include/c++/13/bits/unique_lock.h \
@@ -760,7 +734,6 @@ protocol/CMakeFiles/message.dir/message/cpu_stat.pb.cc.o: /root/Monitor/protocol
   /usr/include/c++/13/bits/unordered_map.h \
   /usr/include/c++/13/bits/unordered_set.h \
   /usr/include/c++/13/bits/uses_allocator.h \
-  /usr/include/c++/13/bits/uses_allocator_args.h \
   /usr/include/c++/13/bits/utility.h \
   /usr/include/c++/13/bits/vector.tcc \
   /usr/include/c++/13/cassert \
@@ -768,7 +741,6 @@ protocol/CMakeFiles/message.dir/message/cpu_stat.pb.cc.o: /root/Monitor/protocol
   /usr/include/c++/13/cerrno \
   /usr/include/c++/13/climits \
   /usr/include/c++/13/clocale \
-  /usr/include/c++/13/compare \
   /usr/include/c++/13/cstddef \
   /usr/include/c++/13/cstdint \
   /usr/include/c++/13/cstdio \
@@ -800,17 +772,12 @@ protocol/CMakeFiles/message.dir/message/cpu_stat.pb.cc.o: /root/Monitor/protocol
   /usr/include/c++/13/mutex \
   /usr/include/c++/13/new \
   /usr/include/c++/13/ostream \
-  /usr/include/c++/13/pstl/execution_defs.h \
-  /usr/include/c++/13/pstl/glue_algorithm_defs.h \
-  /usr/include/c++/13/pstl/glue_memory_defs.h \
-  /usr/include/c++/13/pstl/pstl_config.h \
   /usr/include/c++/13/ratio \
   /usr/include/c++/13/set \
   /usr/include/c++/13/stdexcept \
   /usr/include/c++/13/stdlib.h \
   /usr/include/c++/13/streambuf \
   /usr/include/c++/13/string \
-  /usr/include/c++/13/string_view \
   /usr/include/c++/13/system_error \
   /usr/include/c++/13/tuple \
   /usr/include/c++/13/type_traits \
@@ -996,7 +963,6 @@ protocol/CMakeFiles/message.dir/message/mem_info.pb.cc.o: /root/Monitor/protocol
   /usr/include/assert.h \
   /usr/include/byteswap.h \
   /usr/include/c++/13/algorithm \
-  /usr/include/c++/13/array \
   /usr/include/c++/13/atomic \
   /usr/include/c++/13/backward/auto_ptr.h \
   /usr/include/c++/13/backward/binders.h \
@@ -1037,12 +1003,10 @@ protocol/CMakeFiles/message.dir/message/mem_info.pb.cc.o: /root/Monitor/protocol
   /usr/include/c++/13/bits/locale_facets.h \
   /usr/include/c++/13/bits/locale_facets.tcc \
   /usr/include/c++/13/bits/localefwd.h \
-  /usr/include/c++/13/bits/memory_resource.h \
   /usr/include/c++/13/bits/memoryfwd.h \
   /usr/include/c++/13/bits/move.h \
   /usr/include/c++/13/bits/nested_exception.h \
   /usr/include/c++/13/bits/new_allocator.h \
-  /usr/include/c++/13/bits/node_handle.h \
   /usr/include/c++/13/bits/ostream.tcc \
   /usr/include/c++/13/bits/ostream_insert.h \
   /usr/include/c++/13/bits/parse_numbers.h \
@@ -1081,7 +1045,6 @@ protocol/CMakeFiles/message.dir/message/mem_info.pb.cc.o: /root/Monitor/protocol
   /usr/include/c++/13/bits/stream_iterator.h \
   /usr/include/c++/13/bits/streambuf.tcc \
   /usr/include/c++/13/bits/streambuf_iterator.h \
-  /usr/include/c++/13/bits/string_view.tcc \
   /usr/include/c++/13/bits/stringfwd.h \
   /usr/include/c++/13/bits/uniform_int_dist.h \
   /usr/include/c++/13/bits/unique_lock.h \
@@ -1089,7 +1052,6 @@ protocol/CMakeFiles/message.dir/message/mem_info.pb.cc.o: /root/Monitor/protocol
   /usr/include/c++/13/bits/unordered_map.h \
   /usr/include/c++/13/bits/unordered_set.h \
   /usr/include/c++/13/bits/uses_allocator.h \
-  /usr/include/c++/13/bits/uses_allocator_args.h \
   /usr/include/c++/13/bits/utility.h \
   /usr/include/c++/13/bits/vector.tcc \
   /usr/include/c++/13/cassert \
@@ -1097,7 +1059,6 @@ protocol/CMakeFiles/message.dir/message/mem_info.pb.cc.o: /root/Monitor/protocol
   /usr/include/c++/13/cerrno \
   /usr/include/c++/13/climits \
   /usr/include/c++/13/clocale \
-  /usr/include/c++/13/compare \
   /usr/include/c++/13/cstddef \
   /usr/include/c++/13/cstdint \
   /usr/include/c++/13/cstdio \
@@ -1129,17 +1090,12 @@ protocol/CMakeFiles/message.dir/message/mem_info.pb.cc.o: /root/Monitor/protocol
   /usr/include/c++/13/mutex \
   /usr/include/c++/13/new \
   /usr/include/c++/13/ostream \
-  /usr/include/c++/13/pstl/execution_defs.h \
-  /usr/include/c++/13/pstl/glue_algorithm_defs.h \
-  /usr/include/c++/13/pstl/glue_memory_defs.h \
-  /usr/include/c++/13/pstl/pstl_config.h \
   /usr/include/c++/13/ratio \
   /usr/include/c++/13/set \
   /usr/include/c++/13/stdexcept \
   /usr/include/c++/13/stdlib.h \
   /usr/include/c++/13/streambuf \
   /usr/include/c++/13/string \
-  /usr/include/c++/13/string_view \
   /usr/include/c++/13/system_error \
   /usr/include/c++/13/tuple \
   /usr/include/c++/13/type_traits \
@@ -1325,7 +1281,6 @@ protocol/CMakeFiles/message.dir/message/net_info.pb.cc.o: /root/Monitor/protocol
   /usr/include/assert.h \
   /usr/include/byteswap.h \
   /usr/include/c++/13/algorithm \
-  /usr/include/c++/13/array \
   /usr/include/c++/13/atomic \
   /usr/include/c++/13/backward/auto_ptr.h \
   /usr/include/c++/13/backward/binders.h \
@@ -1366,12 +1321,10 @@ protocol/CMakeFiles/message.dir/message/net_info.pb.cc.o: /root/Monitor/protocol
   /usr/include/c++/13/bits/locale_facets.h \
   /usr/include/c++/13/bits/locale_facets.tcc \
   /usr/include/c++/13/bits/localefwd.h \
-  /usr/include/c++/13/bits/memory_resource.h \
   /usr/include/c++/13/bits/memoryfwd.h \
   /usr/include/c++/13/bits/move.h \
   /usr/include/c++/13/bits/nested_exception.h \
   /usr/include/c++/13/bits/new_allocator.h \
-  /usr/include/c++/13/bits/node_handle.h \
   /usr/include/c++/13/bits/ostream.tcc \
   /usr/include/c++/13/bits/ostream_insert.h \
   /usr/include/c++/13/bits/parse_numbers.h \
@@ -1410,7 +1363,6 @@ protocol/CMakeFiles/message.dir/message/net_info.pb.cc.o: /root/Monitor/protocol
   /usr/include/c++/13/bits/stream_iterator.h \
   /usr/include/c++/13/bits/streambuf.tcc \
   /usr/include/c++/13/bits/streambuf_iterator.h \
-  /usr/include/c++/13/bits/string_view.tcc \
   /usr/include/c++/13/bits/stringfwd.h \
   /usr/include/c++/13/bits/uniform_int_dist.h \
   /usr/include/c++/13/bits/unique_lock.h \
@@ -1418,7 +1370,6 @@ protocol/CMakeFiles/message.dir/message/net_info.pb.cc.o: /root/Monitor/protocol
   /usr/include/c++/13/bits/unordered_map.h \
   /usr/include/c++/13/bits/unordered_set.h \
   /usr/include/c++/13/bits/uses_allocator.h \
-  /usr/include/c++/13/bits/uses_allocator_args.h \
   /usr/include/c++/13/bits/utility.h \
   /usr/include/c++/13/bits/vector.tcc \
   /usr/include/c++/13/cassert \
@@ -1426,7 +1377,6 @@ protocol/CMakeFiles/message.dir/message/net_info.pb.cc.o: /root/Monitor/protocol
   /usr/include/c++/13/cerrno \
   /usr/include/c++/13/climits \
   /usr/include/c++/13/clocale \
-  /usr/include/c++/13/compare \
   /usr/include/c++/13/cstddef \
   /usr/include/c++/13/cstdint \
   /usr/include/c++/13/cstdio \
@@ -1458,17 +1408,12 @@ protocol/CMakeFiles/message.dir/message/net_info.pb.cc.o: /root/Monitor/protocol
   /usr/include/c++/13/mutex \
   /usr/include/c++/13/new \
   /usr/include/c++/13/ostream \
-  /usr/include/c++/13/pstl/execution_defs.h \
-  /usr/include/c++/13/pstl/glue_algorithm_defs.h \
-  /usr/include/c++/13/pstl/glue_memory_defs.h \
-  /usr/include/c++/13/pstl/pstl_config.h \
   /usr/include/c++/13/ratio \
   /usr/include/c++/13/set \
   /usr/include/c++/13/stdexcept \
   /usr/include/c++/13/stdlib.h \
   /usr/include/c++/13/streambuf \
   /usr/include/c++/13/string \
-  /usr/include/c++/13/string_view \
   /usr/include/c++/13/system_error \
   /usr/include/c++/13/tuple \
   /usr/include/c++/13/type_traits \
@@ -1659,7 +1604,6 @@ protocol/CMakeFiles/message.dir/message/service.pb.cc.o: /root/Monitor/protocol/
   /usr/include/assert.h \
   /usr/include/byteswap.h \
   /usr/include/c++/13/algorithm \
-  /usr/include/c++/13/array \
   /usr/include/c++/13/atomic \
   /usr/include/c++/13/backward/auto_ptr.h \
   /usr/include/c++/13/backward/binders.h \
@@ -1700,12 +1644,10 @@ protocol/CMakeFiles/message.dir/message/service.pb.cc.o: /root/Monitor/protocol/
   /usr/include/c++/13/bits/locale_facets.h \
   /usr/include/c++/13/bits/locale_facets.tcc \
   /usr/include/c++/13/bits/localefwd.h \
-  /usr/include/c++/13/bits/memory_resource.h \
   /usr/include/c++/13/bits/memoryfwd.h \
   /usr/include/c++/13/bits/move.h \
   /usr/include/c++/13/bits/nested_exception.h \
   /usr/include/c++/13/bits/new_allocator.h \
-  /usr/include/c++/13/bits/node_handle.h \
   /usr/include/c++/13/bits/ostream.tcc \
   /usr/include/c++/13/bits/ostream_insert.h \
   /usr/include/c++/13/bits/parse_numbers.h \
@@ -1744,7 +1686,6 @@ protocol/CMakeFiles/message.dir/message/service.pb.cc.o: /root/Monitor/protocol/
   /usr/include/c++/13/bits/stream_iterator.h \
   /usr/include/c++/13/bits/streambuf.tcc \
   /usr/include/c++/13/bits/streambuf_iterator.h \
-  /usr/include/c++/13/bits/string_view.tcc \
   /usr/include/c++/13/bits/stringfwd.h \
   /usr/include/c++/13/bits/uniform_int_dist.h \
   /usr/include/c++/13/bits/unique_lock.h \
@@ -1752,7 +1693,6 @@ protocol/CMakeFiles/message.dir/message/service.pb.cc.o: /root/Monitor/protocol/
   /usr/include/c++/13/bits/unordered_map.h \
   /usr/include/c++/13/bits/unordered_set.h \
   /usr/include/c++/13/bits/uses_allocator.h \
-  /usr/include/c++/13/bits/uses_allocator_args.h \
   /usr/include/c++/13/bits/utility.h \
   /usr/include/c++/13/bits/vector.tcc \
   /usr/include/c++/13/cassert \
@@ -1760,7 +1700,6 @@ protocol/CMakeFiles/message.dir/message/service.pb.cc.o: /root/Monitor/protocol/
   /usr/include/c++/13/cerrno \
   /usr/include/c++/13/climits \
   /usr/include/c++/13/clocale \
-  /usr/include/c++/13/compare \
   /usr/include/c++/13/cstddef \
   /usr/include/c++/13/cstdint \
   /usr/include/c++/13/cstdio \
@@ -1792,17 +1731,12 @@ protocol/CMakeFiles/message.dir/message/service.pb.cc.o: /root/Monitor/protocol/
   /usr/include/c++/13/mutex \
   /usr/include/c++/13/new \
   /usr/include/c++/13/ostream \
-  /usr/include/c++/13/pstl/execution_defs.h \
-  /usr/include/c++/13/pstl/glue_algorithm_defs.h \
-  /usr/include/c++/13/pstl/glue_memory_defs.h \
-  /usr/include/c++/13/pstl/pstl_config.h \
   /usr/include/c++/13/ratio \
   /usr/include/c++/13/set \
   /usr/include/c++/13/stdexcept \
   /usr/include/c++/13/stdlib.h \
   /usr/include/c++/13/streambuf \
   /usr/include/c++/13/string \
-  /usr/include/c++/13/string_view \
   /usr/include/c++/13/system_error \
   /usr/include/c++/13/tuple \
   /usr/include/c++/13/type_traits \
@@ -2024,19 +1958,13 @@ protocol/CMakeFiles/message.dir/message/cpu_load.pb.cc.o:
 
 /usr/lib/gcc/x86_64-linux-gnu/13/crtendS.o:
 
-/lib64/ld-linux-x86-64.so.2:
+/usr/include/google/protobuf/endian.h:
 
-/lib/x86_64-linux-gnu/libmvec.so.1:
+/usr/include/google/protobuf/explicitly_constructed.h:
 
-/lib/x86_64-linux-gnu/libc.so.6:
+/usr/include/c++/13/bits/uniform_int_dist.h:
 
-/usr/include/google/protobuf/service.h:
-
-/usr/include/google/protobuf/io/zero_copy_stream_impl.h:
-
-/usr/include/google/protobuf/generated_message_bases.h:
-
-/root/Monitor/protocol/message/service.pb.cc:
+/usr/include/google/protobuf/arena.h:
 
 protocol/CMakeFiles/message.dir/message/cpu_stat.pb.cc.o:
 
@@ -2062,18 +1990,6 @@ protocol/CMakeFiles/message.dir/message/cpu_stat.pb.cc.o:
 
 /usr/include/c++/13/ratio:
 
-/usr/include/google/protobuf/repeated_ptr_field.h:
-
-/usr/include/c++/13/pstl/execution_defs.h:
-
-/usr/include/c++/13/pstl/glue_memory_defs.h:
-
-/usr/include/google/protobuf/arenaz_sampler.h:
-
-/usr/include/x86_64-linux-gnu/bits/types/time_t.h:
-
-/usr/include/x86_64-linux-gnu/bits/waitflags.h:
-
 /usr/include/c++/13/memory:
 
 /usr/include/c++/13/iostream:
@@ -2095,6 +2011,12 @@ protocol/CMakeFiles/message.dir/message/cpu_stat.pb.cc.o:
 /usr/include/c++/13/cwctype:
 
 /usr/include/c++/13/bits/postypes.h:
+
+/usr/include/google/protobuf/arenaz_sampler.h:
+
+/usr/include/x86_64-linux-gnu/bits/types/time_t.h:
+
+/usr/include/x86_64-linux-gnu/bits/waitflags.h:
 
 /usr/include/c++/13/cstring:
 
@@ -2136,27 +2058,29 @@ protocol/CMakeFiles/message.dir/message/cpu_stat.pb.cc.o:
 
 /usr/include/c++/13/bits/streambuf.tcc:
 
+/usr/include/c++/13/tuple:
+
+/usr/include/google/protobuf/stubs/stl_util.h:
+
+/usr/include/byteswap.h:
+
 /usr/include/c++/13/climits:
 
 /usr/include/c++/13/ext/numeric_traits.h:
 
 /usr/include/c++/13/bits/stl_uninitialized.h:
 
-/usr/include/c++/13/bits/uniform_int_dist.h:
+/usr/include/c++/13/vector:
 
-/usr/include/google/protobuf/explicitly_constructed.h:
+/usr/include/x86_64-linux-gnu/bits/byteswap.h:
 
 /usr/include/c++/13/bits/stl_set.h:
 
 /usr/include/x86_64-linux-gnu/bits/pthreadtypes.h:
 
+/usr/include/google/protobuf/arena_impl.h:
+
 /usr/include/c++/13/bits/stl_multiset.h:
-
-/usr/include/c++/13/bits/stl_multimap.h:
-
-/usr/include/c++/13/pstl/pstl_config.h:
-
-/usr/include/google/protobuf/stubs/status.h:
 
 /usr/include/c++/13/bits/exception_ptr.h:
 
@@ -2176,35 +2100,29 @@ protocol/CMakeFiles/message.dir/message/cpu_stat.pb.cc.o:
 
 /usr/include/google/protobuf/stubs/once.h:
 
+/usr/include/c++/13/bits/basic_ios.tcc:
+
+/usr/include/google/protobuf/generated_enum_util.h:
+
+/usr/include/c++/13/bits/basic_ios.h:
+
 /usr/include/c++/13/bits/shared_ptr_atomic.h:
+
+/usr/include/google/protobuf/generated_message_bases.h:
 
 /usr/include/assert.h:
 
 /usr/include/endian.h:
 
-/usr/include/x86_64-linux-gnu/bits/byteswap.h:
-
-/usr/include/c++/13/vector:
-
-/usr/include/google/protobuf/stubs/stl_util.h:
-
-/usr/include/byteswap.h:
-
 /usr/include/c++/13/cctype:
 
-/usr/include/c++/13/pstl/glue_algorithm_defs.h:
-
-/usr/include/c++/13/tuple:
-
-/usr/include/c++/13/string_view:
-
-/root/Monitor/protocol/message/cpu_load.pb.cc:
-
-/usr/include/c++/13/clocale:
-
-/usr/include/x86_64-linux-gnu/bits/wchar.h:
-
 /usr/include/c++/13/bits/parse_numbers.h:
+
+/usr/include/c++/13/bits/stl_pair.h:
+
+/usr/include/x86_64-linux-gnu/bits/types/clockid_t.h:
+
+/usr/include/x86_64-linux-gnu/c++/13/bits/error_constants.h:
 
 /usr/include/c++/13/bits/allocated_ptr.h:
 
@@ -2214,23 +2132,35 @@ protocol/CMakeFiles/message.dir/message/cpu_stat.pb.cc.o:
 
 /usr/include/x86_64-linux-gnu/c++/13/bits/c++config.h:
 
+/usr/include/c++/13/bits/exception_defines.h:
+
+/usr/include/c++/13/bits/functional_hash.h:
+
+/usr/include/x86_64-linux-gnu/bits/types/sigset_t.h:
+
+/usr/include/c++/13/ext/alloc_traits.h:
+
+/usr/include/google/protobuf/generated_enum_reflection.h:
+
+/usr/include/c++/13/bits/stl_relops.h:
+
+/usr/include/c++/13/bits/atomic_base.h:
+
+/usr/include/x86_64-linux-gnu/bits/time64.h:
+
+/usr/include/x86_64-linux-gnu/bits/atomic_wide_counter.h:
+
+/usr/include/x86_64-linux-gnu/bits/floatn-common.h:
+
+/usr/include/c++/13/bits/functexcept.h:
+
 /usr/include/alloca.h:
 
 /usr/include/c++/13/stdlib.h:
 
-/usr/include/c++/13/bits/string_view.tcc:
-
-/usr/include/c++/13/bits/localefwd.h:
-
-/usr/include/google/protobuf/reflection_ops.h:
-
 /usr/include/c++/13/bits/stl_function.h:
 
 /usr/include/c++/13/bits/std_mutex.h:
-
-/usr/include/c++/13/atomic:
-
-/usr/include/c++/13/ext/aligned_buffer.h:
 
 /usr/include/asm-generic/errno.h:
 
@@ -2242,6 +2172,10 @@ protocol/CMakeFiles/message.dir/message/cpu_stat.pb.cc.o:
 
 /usr/include/google/protobuf/repeated_field.h:
 
+/usr/include/c++/13/bits/localefwd.h:
+
+/usr/include/google/protobuf/reflection_ops.h:
+
 /usr/include/c++/13/exception:
 
 /usr/include/c++/13/ext/type_traits.h:
@@ -2251,6 +2185,58 @@ protocol/CMakeFiles/message.dir/message/cpu_stat.pb.cc.o:
 /usr/include/c++/13/bits/shared_ptr.h:
 
 /usr/include/c++/13/debug/assertions.h:
+
+/usr/include/c++/13/atomic:
+
+/usr/include/google/protobuf/descriptor.h:
+
+/usr/include/c++/13/ext/aligned_buffer.h:
+
+/root/Monitor/protocol/message/service.pb.cc:
+
+/usr/include/google/protobuf/generated_message_reflection.h:
+
+/usr/lib/gcc/x86_64-linux-gnu/13/libgcc.a:
+
+/usr/include/c++/13/bits/memoryfwd.h:
+
+/usr/include/x86_64-linux-gnu/bits/posix1_lim.h:
+
+/usr/include/c++/13/bits/stream_iterator.h:
+
+/usr/include/c++/13/bits/refwrap.h:
+
+/usr/include/c++/13/bits/align.h:
+
+/usr/include/c++/13/backward/auto_ptr.h:
+
+/usr/include/c++/13/stdexcept:
+
+/usr/include/c++/13/cstdlib:
+
+/usr/include/x86_64-linux-gnu/c++/13/bits/atomic_word.h:
+
+/usr/include/c++/13/map:
+
+/usr/include/c++/13/backward/binders.h:
+
+/usr/include/google/protobuf/implicit_weak_message.h:
+
+/usr/include/x86_64-linux-gnu/bits/types/__fpos_t.h:
+
+/usr/include/c++/13/system_error:
+
+/usr/include/x86_64-linux-gnu/bits/timesize.h:
+
+/usr/include/google/protobuf/io/coded_stream.h:
+
+/usr/include/c++/13/bits/stl_iterator_base_types.h:
+
+/usr/include/c++/13/bits/stl_iterator.h:
+
+/usr/include/c++/13/bits/concept_check.h:
+
+/usr/include/google/protobuf/stubs/mutex.h:
 
 /usr/include/c++/13/bits/stl_tempbuf.h:
 
@@ -2272,65 +2258,15 @@ protocol/CMakeFiles/message.dir/message/cpu_stat.pb.cc.o:
 
 /usr/include/c++/13/bits/std_function.h:
 
-/usr/include/c++/13/bits/exception_defines.h:
-
-/usr/include/c++/13/bits/functional_hash.h:
-
-/usr/include/x86_64-linux-gnu/bits/types/sigset_t.h:
-
-/usr/include/c++/13/bits/stream_iterator.h:
-
-/usr/include/c++/13/bits/refwrap.h:
-
-/usr/include/c++/13/bits/align.h:
-
-/usr/include/c++/13/backward/auto_ptr.h:
-
-/usr/include/c++/13/bits/basic_ios.h:
-
-/usr/include/c++/13/bits/basic_ios.tcc:
-
-/usr/include/google/protobuf/generated_enum_util.h:
-
-/usr/include/c++/13/stdexcept:
-
-/usr/include/c++/13/cstdlib:
-
-/usr/include/c++/13/array:
-
-/usr/include/x86_64-linux-gnu/c++/13/bits/atomic_word.h:
-
-/usr/include/c++/13/map:
-
-/usr/include/c++/13/backward/binders.h:
-
-/usr/include/google/protobuf/implicit_weak_message.h:
-
-/usr/include/x86_64-linux-gnu/bits/types/__fpos_t.h:
-
-/usr/include/c++/13/system_error:
-
-/usr/include/x86_64-linux-gnu/bits/timesize.h:
-
-/usr/include/google/protobuf/any.h:
+/usr/include/x86_64-linux-gnu/bits/select.h:
 
 /usr/include/c++/13/bits/alloc_traits.h:
 
-/usr/include/c++/13/ext/alloc_traits.h:
+/usr/include/google/protobuf/any.h:
 
-/usr/include/google/protobuf/generated_enum_reflection.h:
+/usr/include/google/protobuf/extension_set.h:
 
-/usr/include/c++/13/bits/stl_relops.h:
-
-/usr/include/c++/13/bits/atomic_base.h:
-
-/usr/include/x86_64-linux-gnu/bits/time64.h:
-
-/usr/include/x86_64-linux-gnu/bits/atomic_wide_counter.h:
-
-/usr/include/x86_64-linux-gnu/bits/floatn-common.h:
-
-/usr/include/c++/13/bits/functexcept.h:
+/usr/include/c++/13/cerrno:
 
 /usr/include/c++/13/bits/erase_if.h:
 
@@ -2354,28 +2290,6 @@ protocol/CMakeFiles/message.dir/message/cpu_stat.pb.cc.o:
 
 /usr/include/c++/13/bits/locale_facets.tcc:
 
-/usr/include/google/protobuf/io/coded_stream.h:
-
-/usr/include/c++/13/bits/stl_iterator_base_types.h:
-
-/usr/include/c++/13/bits/stl_iterator.h:
-
-/usr/include/c++/13/bits/concept_check.h:
-
-/usr/include/google/protobuf/stubs/mutex.h:
-
-/usr/include/x86_64-linux-gnu/bits/select.h:
-
-/usr/include/c++/13/bits/memory_resource.h:
-
-/usr/lib/gcc/x86_64-linux-gnu/13/libgcc.a:
-
-/usr/include/c++/13/bits/memoryfwd.h:
-
-/usr/include/google/protobuf/generated_message_reflection.h:
-
-/usr/include/x86_64-linux-gnu/bits/posix1_lim.h:
-
 /usr/include/c++/13/bits/shared_ptr_base.h:
 
 /usr/include/c++/13/bits/char_traits.h:
@@ -2385,24 +2299,6 @@ protocol/CMakeFiles/message.dir/message/cpu_stat.pb.cc.o:
 /usr/include/x86_64-linux-gnu/bits/string_fortified.h:
 
 /usr/include/google/protobuf/stubs/strutil.h:
-
-/usr/include/c++/13/bits/node_handle.h:
-
-/usr/include/x86_64-linux-gnu/bits/locale.h:
-
-/usr/include/c++/13/set:
-
-/usr/include/google/protobuf/stubs/stringpiece.h:
-
-/usr/include/x86_64-linux-gnu/bits/sched.h:
-
-/usr/include/c++/13/bits/istream.tcc:
-
-/usr/include/c++/13/bits/ptr_traits.h:
-
-/usr/include/pthread.h:
-
-/usr/include/x86_64-linux-gnu/sys/types.h:
 
 /usr/include/c++/13/bits/utility.h:
 
@@ -2426,6 +2322,20 @@ protocol/CMakeFiles/message.dir/message/cpu_stat.pb.cc.o:
 
 /usr/include/c++/13/bits/predefined_ops.h:
 
+/usr/include/c++/13/set:
+
+/usr/include/google/protobuf/stubs/stringpiece.h:
+
+/usr/include/x86_64-linux-gnu/bits/sched.h:
+
+/usr/include/c++/13/bits/istream.tcc:
+
+/usr/include/c++/13/bits/ptr_traits.h:
+
+/usr/include/pthread.h:
+
+/usr/include/x86_64-linux-gnu/sys/types.h:
+
 /usr/include/c++/13/bits/nested_exception.h:
 
 /usr/include/ctype.h:
@@ -2441,6 +2351,14 @@ protocol/CMakeFiles/message.dir/message/cpu_stat.pb.cc.o:
 /usr/include/c++/13/ios:
 
 /usr/include/google/protobuf/stubs/port.h:
+
+/root/Monitor/protocol/message/cpu_load.pb.cc:
+
+/usr/include/c++/13/clocale:
+
+/usr/include/x86_64-linux-gnu/bits/wchar.h:
+
+/usr/include/c++/13/bits/stl_multimap.h:
 
 /usr/include/c++/13/unordered_set:
 
@@ -2461,24 +2379,6 @@ protocol/CMakeFiles/message.dir/message/cpu_stat.pb.cc.o:
 /usr/include/google/protobuf/stubs/common.h:
 
 /usr/include/c++/13/bits/stl_bvector.h:
-
-/usr/include/google/protobuf/arena.h:
-
-/usr/include/google/protobuf/arena_impl.h:
-
-/usr/include/c++/13/bits/stl_pair.h:
-
-/usr/include/x86_64-linux-gnu/bits/types/clockid_t.h:
-
-/usr/include/x86_64-linux-gnu/c++/13/bits/error_constants.h:
-
-/usr/include/google/protobuf/descriptor.h:
-
-/usr/include/google/protobuf/endian.h:
-
-/usr/include/c++/13/cerrno:
-
-/usr/include/google/protobuf/extension_set.h:
 
 /usr/include/google/protobuf/io/zero_copy_stream.h:
 
@@ -2502,9 +2402,7 @@ protocol/CMakeFiles/message.dir/message/cpu_stat.pb.cc.o:
 
 /usr/include/x86_64-linux-gnu/bits/stdint-least.h:
 
-/usr/include/google/protobuf/empty.pb.h:
-
-/root/Monitor/protocol/message/cpu_softirq.pb.h:
+/usr/include/google/protobuf/service.h:
 
 /usr/include/x86_64-linux-gnu/bits/local_lim.h:
 
@@ -2512,15 +2410,15 @@ protocol/CMakeFiles/message.dir/message/cpu_stat.pb.cc.o:
 
 /usr/include/x86_64-linux-gnu/bits/types/timer_t.h:
 
+/usr/include/google/protobuf/repeated_ptr_field.h:
+
 /usr/include/stdc-predef.h:
 
 /usr/include/google/protobuf/stubs/macros.h:
 
 /usr/include/google/protobuf/stubs/platform_macros.h:
 
-/usr/lib/x86_64-linux-gnu/crti.o:
-
-/usr/include/google/protobuf/unknown_field_set.h:
+/usr/include/google/protobuf/stubs/status.h:
 
 /usr/include/google/protobuf/wire_format.h:
 
@@ -2576,6 +2474,8 @@ protocol/CMakeFiles/message.dir/message/cpu_stat.pb.cc.o:
 
 /usr/include/x86_64-linux-gnu/bits/libc-header-start.h:
 
+/usr/include/x86_64-linux-gnu/bits/locale.h:
+
 /usr/include/x86_64-linux-gnu/bits/long-double.h:
 
 /usr/include/c++/13/bits/stl_vector.h:
@@ -2590,7 +2490,9 @@ protocol/CMakeFiles/message.dir/message/cpu_stat.pb.cc.o:
 
 /usr/include/x86_64-linux-gnu/bits/select-decl.h:
 
-/usr/include/c++/13/compare:
+/usr/include/google/protobuf/unknown_field_set.h:
+
+/usr/lib/x86_64-linux-gnu/crti.o:
 
 /usr/include/x86_64-linux-gnu/bits/setjmp.h:
 
@@ -2615,10 +2517,6 @@ protocol/CMakeFiles/message.dir/message/cpu_stat.pb.cc.o:
 /usr/include/x86_64-linux-gnu/bits/struct_rwlock.h:
 
 /usr/include/x86_64-linux-gnu/bits/thread-shared-types.h:
-
-/lib/x86_64-linux-gnu/libm.so.6:
-
-/usr/include/x86_64-linux-gnu/bits/time.h:
 
 /usr/include/x86_64-linux-gnu/bits/timex.h:
 
@@ -2700,8 +2598,6 @@ protocol/CMakeFiles/message.dir/message/service.pb.cc.o:
 
 /usr/include/x86_64-linux-gnu/c++/13/bits/gthr.h:
 
-/usr/include/c++/13/bits/uses_allocator_args.h:
-
 /usr/include/google/protobuf/port.h:
 
 /usr/include/x86_64-linux-gnu/c++/13/bits/os_defines.h:
@@ -2735,3 +2631,19 @@ protocol/CMakeFiles/message.dir/message/service.pb.cc.o:
 /root/Monitor/protocol/message/net_info.pb.h:
 
 /root/Monitor/protocol/message/net_info.pb.cc:
+
+/root/Monitor/protocol/message/cpu_softirq.pb.h:
+
+/usr/include/google/protobuf/empty.pb.h:
+
+/usr/include/google/protobuf/io/zero_copy_stream_impl.h:
+
+/lib/x86_64-linux-gnu/libc.so.6:
+
+/usr/include/x86_64-linux-gnu/bits/time.h:
+
+/lib/x86_64-linux-gnu/libm.so.6:
+
+/lib/x86_64-linux-gnu/libmvec.so.1:
+
+/lib64/ld-linux-x86-64.so.2:

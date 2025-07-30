@@ -39,7 +39,7 @@ public:
     auto &softirq_sirqs = info->cpu_info();
     int num = softirq_sirqs.size();
 
-    for (int i = 0; i < num; ++i) {
+    for (int i = 1; i < num; ++i) {
       auto &cpuinfo = softirq_sirqs.Get(i);
       auto &cpu_name = cpuinfo.cpu_name();
       auto &sirq = cpuinfo.cpu_sirq();

@@ -6,5 +6,5 @@ CXX_DEFINES = -Dclient_EXPORTS
 
 CXX_INCLUDES = -I/root/Monitor/rpc/include -I/root/Monitor/protocol/message -I/root/Monitor/monitor/include
 
-CXX_FLAGS = -O3 -DNDEBUG -std=gnu++17 -fPIC
+CXX_FLAGS = -O3 -DNDEBUG -std=gnu++14 -fPIC
 

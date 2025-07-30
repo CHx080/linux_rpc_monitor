@@ -19,7 +19,6 @@ int main(int argc, char *argv[]) {
   QMainWindow window;
   window.setWindowTitle("Watch");
   window.setFixedSize(550, 150);
-  window.setWindowFlags(window.windowFlags() | Qt::FramelessWindowHint);
 
   QWidget *centralWidget = new QWidget(&window);
   window.setCentralWidget(centralWidget);
