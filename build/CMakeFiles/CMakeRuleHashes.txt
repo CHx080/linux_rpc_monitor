@@ -1,4 +1,6 @@
 # Hashes of file build rules.
+5499ea81299001f29167f01dc1708180 display/CMakeFiles/display_autogen
+d49f80bea31a30b862d3b7c3d1ef3fd5 display/display_autogen/timestamp
 90792d62bae7ee05c0c4bb03b786f4f9 protocol/CMakeFiles/proto
 3cd3a0925251cef12ee423d2a090e6e3 protocol/message/cpu_load.pb.h
 1475cfe19acc2850ca734abdcb50ce82 protocol/message/cpu_softirq.pb.h

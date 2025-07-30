@@ -26,7 +26,7 @@ foreach(item ${PROTO_SFILE})
 endforeach()
 
 add_custom_target(proto ALL DEPENDS ${PROTO_SRC_OBJECTS})
-add_library(info STATIC ${PROTO_SRC_OBJECTS})
+add_library(info SHARED ${PROTO_SRC_OBJECTS})
 add_dependencies(info proto)
 target_sources(info PRIVATE ${PROTO_CPP_SRC})
 target_include_directories(info PUBLIC ${PROTO_DFILE_DIR})

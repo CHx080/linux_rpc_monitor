@@ -8,4 +8,4 @@ set(ALL_SRC
 )
 add_library(monitor SHARED ${ALL_SRC})
 target_include_directories(monitor PUBLIC ${CMAKE_CURRENT_SOURCE_DIR}/include)
-target_link_libraries(monitor PRIVATE message)
+target_link_libraries(monitor PRIVATE info)

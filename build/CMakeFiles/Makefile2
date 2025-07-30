@@ -64,19 +64,71 @@ CMAKE_BINARY_DIR = /root/Monitor/build
 
 # The main recursive "all" target.
 all: protocol/all
+all: monitor/all
+all: rpc/all
+all: display/all
 .PHONY : all
 
 # The main recursive "codegen" target.
 codegen: protocol/codegen
+codegen: monitor/codegen
+codegen: rpc/codegen
+codegen: display/codegen
 .PHONY : codegen
 
 # The main recursive "preinstall" target.
 preinstall: protocol/preinstall
+preinstall: monitor/preinstall
+preinstall: rpc/preinstall
+preinstall: display/preinstall
 .PHONY : preinstall
 
 # The main recursive "clean" target.
 clean: protocol/clean
+clean: monitor/clean
+clean: rpc/clean
+clean: display/clean
 .PHONY : clean
+
+#=============================================================================
+# Directory level rules for directory display
+
+# Recursive "all" directory target.
+display/all: display/CMakeFiles/display.dir/all
+.PHONY : display/all
+
+# Recursive "codegen" directory target.
+display/codegen: display/CMakeFiles/display.dir/codegen
+.PHONY : display/codegen
+
+# Recursive "preinstall" directory target.
+display/preinstall:
+.PHONY : display/preinstall
+
+# Recursive "clean" directory target.
+display/clean: display/CMakeFiles/display.dir/clean
+display/clean: display/CMakeFiles/display_autogen_timestamp_deps.dir/clean
+display/clean: display/CMakeFiles/display_autogen.dir/clean
+.PHONY : display/clean
+
+#=============================================================================
+# Directory level rules for directory monitor
+
+# Recursive "all" directory target.
+monitor/all: monitor/CMakeFiles/monitor.dir/all
+.PHONY : monitor/all
+
+# Recursive "codegen" directory target.
+monitor/codegen: monitor/CMakeFiles/monitor.dir/codegen
+.PHONY : monitor/codegen
+
+# Recursive "preinstall" directory target.
+monitor/preinstall:
+.PHONY : monitor/preinstall
+
+# Recursive "clean" directory target.
+monitor/clean: monitor/CMakeFiles/monitor.dir/clean
+.PHONY : monitor/clean
 
 #=============================================================================
 # Directory level rules for directory protocol
@@ -101,13 +153,35 @@ protocol/clean: protocol/CMakeFiles/info.dir/clean
 .PHONY : protocol/clean
 
 #=============================================================================
+# Directory level rules for directory rpc
+
+# Recursive "all" directory target.
+rpc/all: rpc/CMakeFiles/client.dir/all
+rpc/all: rpc/CMakeFiles/server.dir/all
+.PHONY : rpc/all
+
+# Recursive "codegen" directory target.
+rpc/codegen: rpc/CMakeFiles/client.dir/codegen
+rpc/codegen: rpc/CMakeFiles/server.dir/codegen
+.PHONY : rpc/codegen
+
+# Recursive "preinstall" directory target.
+rpc/preinstall:
+.PHONY : rpc/preinstall
+
+# Recursive "clean" directory target.
+rpc/clean: rpc/CMakeFiles/client.dir/clean
+rpc/clean: rpc/CMakeFiles/server.dir/clean
+.PHONY : rpc/clean
+
+#=============================================================================
 # Target rules for target protocol/CMakeFiles/proto.dir
 
 # All Build rule for target.
 protocol/CMakeFiles/proto.dir/all:
 	$(MAKE) $(MAKESILENT) -f protocol/CMakeFiles/proto.dir/build.make protocol/CMakeFiles/proto.dir/depend
 	$(MAKE) $(MAKESILENT) -f protocol/CMakeFiles/proto.dir/build.make protocol/CMakeFiles/proto.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/root/Monitor/build/CMakeFiles --progress-num=8,9,10,11,12,13 "Built target proto"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/root/Monitor/build/CMakeFiles --progress-num=28,29,30,31,32,33 "Built target proto"
 .PHONY : protocol/CMakeFiles/proto.dir/all
 
 # Build rule for subdir invocation for target.
@@ -124,7 +198,7 @@ proto: protocol/CMakeFiles/proto.dir/rule
 # codegen rule for target.
 protocol/CMakeFiles/proto.dir/codegen:
 	$(MAKE) $(MAKESILENT) -f protocol/CMakeFiles/proto.dir/build.make protocol/CMakeFiles/proto.dir/codegen
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/root/Monitor/build/CMakeFiles --progress-num=8,9,10,11,12,13 "Finished codegen for target proto"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/root/Monitor/build/CMakeFiles --progress-num=28,29,30,31,32,33 "Finished codegen for target proto"
 .PHONY : protocol/CMakeFiles/proto.dir/codegen
 
 # clean rule for target.
@@ -139,12 +213,12 @@ protocol/CMakeFiles/proto.dir/clean:
 protocol/CMakeFiles/info.dir/all: protocol/CMakeFiles/proto.dir/all
 	$(MAKE) $(MAKESILENT) -f protocol/CMakeFiles/info.dir/build.make protocol/CMakeFiles/info.dir/depend
 	$(MAKE) $(MAKESILENT) -f protocol/CMakeFiles/info.dir/build.make protocol/CMakeFiles/info.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/root/Monitor/build/CMakeFiles --progress-num=1,2,3,4,5,6,7 "Built target info"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/root/Monitor/build/CMakeFiles --progress-num=8,9,10,11,12,13,14,15,16,17,18,19,20 "Built target info"
 .PHONY : protocol/CMakeFiles/info.dir/all
 
 # Build rule for subdir invocation for target.
 protocol/CMakeFiles/info.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /root/Monitor/build/CMakeFiles 13
+	$(CMAKE_COMMAND) -E cmake_progress_start /root/Monitor/build/CMakeFiles 19
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 protocol/CMakeFiles/info.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /root/Monitor/build/CMakeFiles 0
 .PHONY : protocol/CMakeFiles/info.dir/rule
@@ -156,13 +230,211 @@ info: protocol/CMakeFiles/info.dir/rule
 # codegen rule for target.
 protocol/CMakeFiles/info.dir/codegen: protocol/CMakeFiles/proto.dir/all
 	$(MAKE) $(MAKESILENT) -f protocol/CMakeFiles/info.dir/build.make protocol/CMakeFiles/info.dir/codegen
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/root/Monitor/build/CMakeFiles --progress-num=1,2,3,4,5,6,7 "Finished codegen for target info"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/root/Monitor/build/CMakeFiles --progress-num=8,9,10,11,12,13,14,15,16,17,18,19,20 "Finished codegen for target info"
 .PHONY : protocol/CMakeFiles/info.dir/codegen
 
 # clean rule for target.
 protocol/CMakeFiles/info.dir/clean:
 	$(MAKE) $(MAKESILENT) -f protocol/CMakeFiles/info.dir/build.make protocol/CMakeFiles/info.dir/clean
 .PHONY : protocol/CMakeFiles/info.dir/clean
+
+#=============================================================================
+# Target rules for target monitor/CMakeFiles/monitor.dir
+
+# All Build rule for target.
+monitor/CMakeFiles/monitor.dir/all: protocol/CMakeFiles/info.dir/all
+	$(MAKE) $(MAKESILENT) -f monitor/CMakeFiles/monitor.dir/build.make monitor/CMakeFiles/monitor.dir/depend
+	$(MAKE) $(MAKESILENT) -f monitor/CMakeFiles/monitor.dir/build.make monitor/CMakeFiles/monitor.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/root/Monitor/build/CMakeFiles --progress-num=21,22,23,24,25,26,27 "Built target monitor"
+.PHONY : monitor/CMakeFiles/monitor.dir/all
+
+# Build rule for subdir invocation for target.
+monitor/CMakeFiles/monitor.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /root/Monitor/build/CMakeFiles 26
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 monitor/CMakeFiles/monitor.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /root/Monitor/build/CMakeFiles 0
+.PHONY : monitor/CMakeFiles/monitor.dir/rule
+
+# Convenience name for target.
+monitor: monitor/CMakeFiles/monitor.dir/rule
+.PHONY : monitor
+
+# codegen rule for target.
+monitor/CMakeFiles/monitor.dir/codegen:
+	$(MAKE) $(MAKESILENT) -f monitor/CMakeFiles/monitor.dir/build.make monitor/CMakeFiles/monitor.dir/codegen
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/root/Monitor/build/CMakeFiles --progress-num=21,22,23,24,25,26,27 "Finished codegen for target monitor"
+.PHONY : monitor/CMakeFiles/monitor.dir/codegen
+
+# clean rule for target.
+monitor/CMakeFiles/monitor.dir/clean:
+	$(MAKE) $(MAKESILENT) -f monitor/CMakeFiles/monitor.dir/build.make monitor/CMakeFiles/monitor.dir/clean
+.PHONY : monitor/CMakeFiles/monitor.dir/clean
+
+#=============================================================================
+# Target rules for target rpc/CMakeFiles/client.dir
+
+# All Build rule for target.
+rpc/CMakeFiles/client.dir/all: protocol/CMakeFiles/info.dir/all
+rpc/CMakeFiles/client.dir/all: monitor/CMakeFiles/monitor.dir/all
+	$(MAKE) $(MAKESILENT) -f rpc/CMakeFiles/client.dir/build.make rpc/CMakeFiles/client.dir/depend
+	$(MAKE) $(MAKESILENT) -f rpc/CMakeFiles/client.dir/build.make rpc/CMakeFiles/client.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/root/Monitor/build/CMakeFiles --progress-num=1,2 "Built target client"
+.PHONY : rpc/CMakeFiles/client.dir/all
+
+# Build rule for subdir invocation for target.
+rpc/CMakeFiles/client.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /root/Monitor/build/CMakeFiles 28
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 rpc/CMakeFiles/client.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /root/Monitor/build/CMakeFiles 0
+.PHONY : rpc/CMakeFiles/client.dir/rule
+
+# Convenience name for target.
+client: rpc/CMakeFiles/client.dir/rule
+.PHONY : client
+
+# codegen rule for target.
+rpc/CMakeFiles/client.dir/codegen:
+	$(MAKE) $(MAKESILENT) -f rpc/CMakeFiles/client.dir/build.make rpc/CMakeFiles/client.dir/codegen
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/root/Monitor/build/CMakeFiles --progress-num=1,2 "Finished codegen for target client"
+.PHONY : rpc/CMakeFiles/client.dir/codegen
+
+# clean rule for target.
+rpc/CMakeFiles/client.dir/clean:
+	$(MAKE) $(MAKESILENT) -f rpc/CMakeFiles/client.dir/build.make rpc/CMakeFiles/client.dir/clean
+.PHONY : rpc/CMakeFiles/client.dir/clean
+
+#=============================================================================
+# Target rules for target rpc/CMakeFiles/server.dir
+
+# All Build rule for target.
+rpc/CMakeFiles/server.dir/all: protocol/CMakeFiles/info.dir/all
+rpc/CMakeFiles/server.dir/all: monitor/CMakeFiles/monitor.dir/all
+	$(MAKE) $(MAKESILENT) -f rpc/CMakeFiles/server.dir/build.make rpc/CMakeFiles/server.dir/depend
+	$(MAKE) $(MAKESILENT) -f rpc/CMakeFiles/server.dir/build.make rpc/CMakeFiles/server.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/root/Monitor/build/CMakeFiles --progress-num=34,35 "Built target server"
+.PHONY : rpc/CMakeFiles/server.dir/all
+
+# Build rule for subdir invocation for target.
+rpc/CMakeFiles/server.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /root/Monitor/build/CMakeFiles 28
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 rpc/CMakeFiles/server.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /root/Monitor/build/CMakeFiles 0
+.PHONY : rpc/CMakeFiles/server.dir/rule
+
+# Convenience name for target.
+server: rpc/CMakeFiles/server.dir/rule
+.PHONY : server
+
+# codegen rule for target.
+rpc/CMakeFiles/server.dir/codegen:
+	$(MAKE) $(MAKESILENT) -f rpc/CMakeFiles/server.dir/build.make rpc/CMakeFiles/server.dir/codegen
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/root/Monitor/build/CMakeFiles --progress-num=34,35 "Finished codegen for target server"
+.PHONY : rpc/CMakeFiles/server.dir/codegen
+
+# clean rule for target.
+rpc/CMakeFiles/server.dir/clean:
+	$(MAKE) $(MAKESILENT) -f rpc/CMakeFiles/server.dir/build.make rpc/CMakeFiles/server.dir/clean
+.PHONY : rpc/CMakeFiles/server.dir/clean
+
+#=============================================================================
+# Target rules for target display/CMakeFiles/display.dir
+
+# All Build rule for target.
+display/CMakeFiles/display.dir/all: protocol/CMakeFiles/info.dir/all
+display/CMakeFiles/display.dir/all: monitor/CMakeFiles/monitor.dir/all
+display/CMakeFiles/display.dir/all: rpc/CMakeFiles/client.dir/all
+display/CMakeFiles/display.dir/all: display/CMakeFiles/display_autogen.dir/all
+display/CMakeFiles/display.dir/all: display/CMakeFiles/display_autogen_timestamp_deps.dir/all
+	$(MAKE) $(MAKESILENT) -f display/CMakeFiles/display.dir/build.make display/CMakeFiles/display.dir/depend
+	$(MAKE) $(MAKESILENT) -f display/CMakeFiles/display.dir/build.make display/CMakeFiles/display.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/root/Monitor/build/CMakeFiles --progress-num=3,4,5,6 "Built target display"
+.PHONY : display/CMakeFiles/display.dir/all
+
+# Build rule for subdir invocation for target.
+display/CMakeFiles/display.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /root/Monitor/build/CMakeFiles 33
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 display/CMakeFiles/display.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /root/Monitor/build/CMakeFiles 0
+.PHONY : display/CMakeFiles/display.dir/rule
+
+# Convenience name for target.
+display: display/CMakeFiles/display.dir/rule
+.PHONY : display
+
+# codegen rule for target.
+display/CMakeFiles/display.dir/codegen: display/CMakeFiles/display_autogen_timestamp_deps.dir/all
+	$(MAKE) $(MAKESILENT) -f display/CMakeFiles/display.dir/build.make display/CMakeFiles/display.dir/codegen
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/root/Monitor/build/CMakeFiles --progress-num=3,4,5,6 "Finished codegen for target display"
+.PHONY : display/CMakeFiles/display.dir/codegen
+
+# clean rule for target.
+display/CMakeFiles/display.dir/clean:
+	$(MAKE) $(MAKESILENT) -f display/CMakeFiles/display.dir/build.make display/CMakeFiles/display.dir/clean
+.PHONY : display/CMakeFiles/display.dir/clean
+
+#=============================================================================
+# Target rules for target display/CMakeFiles/display_autogen_timestamp_deps.dir
+
+# All Build rule for target.
+display/CMakeFiles/display_autogen_timestamp_deps.dir/all: rpc/CMakeFiles/client.dir/all
+	$(MAKE) $(MAKESILENT) -f display/CMakeFiles/display_autogen_timestamp_deps.dir/build.make display/CMakeFiles/display_autogen_timestamp_deps.dir/depend
+	$(MAKE) $(MAKESILENT) -f display/CMakeFiles/display_autogen_timestamp_deps.dir/build.make display/CMakeFiles/display_autogen_timestamp_deps.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/root/Monitor/build/CMakeFiles --progress-num= "Built target display_autogen_timestamp_deps"
+.PHONY : display/CMakeFiles/display_autogen_timestamp_deps.dir/all
+
+# Build rule for subdir invocation for target.
+display/CMakeFiles/display_autogen_timestamp_deps.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /root/Monitor/build/CMakeFiles 28
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 display/CMakeFiles/display_autogen_timestamp_deps.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /root/Monitor/build/CMakeFiles 0
+.PHONY : display/CMakeFiles/display_autogen_timestamp_deps.dir/rule
+
+# Convenience name for target.
+display_autogen_timestamp_deps: display/CMakeFiles/display_autogen_timestamp_deps.dir/rule
+.PHONY : display_autogen_timestamp_deps
+
+# codegen rule for target.
+display/CMakeFiles/display_autogen_timestamp_deps.dir/codegen:
+	$(MAKE) $(MAKESILENT) -f display/CMakeFiles/display_autogen_timestamp_deps.dir/build.make display/CMakeFiles/display_autogen_timestamp_deps.dir/codegen
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/root/Monitor/build/CMakeFiles --progress-num= "Finished codegen for target display_autogen_timestamp_deps"
+.PHONY : display/CMakeFiles/display_autogen_timestamp_deps.dir/codegen
+
+# clean rule for target.
+display/CMakeFiles/display_autogen_timestamp_deps.dir/clean:
+	$(MAKE) $(MAKESILENT) -f display/CMakeFiles/display_autogen_timestamp_deps.dir/build.make display/CMakeFiles/display_autogen_timestamp_deps.dir/clean
+.PHONY : display/CMakeFiles/display_autogen_timestamp_deps.dir/clean
+
+#=============================================================================
+# Target rules for target display/CMakeFiles/display_autogen.dir
+
+# All Build rule for target.
+display/CMakeFiles/display_autogen.dir/all: display/CMakeFiles/display_autogen_timestamp_deps.dir/all
+	$(MAKE) $(MAKESILENT) -f display/CMakeFiles/display_autogen.dir/build.make display/CMakeFiles/display_autogen.dir/depend
+	$(MAKE) $(MAKESILENT) -f display/CMakeFiles/display_autogen.dir/build.make display/CMakeFiles/display_autogen.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/root/Monitor/build/CMakeFiles --progress-num=7 "Built target display_autogen"
+.PHONY : display/CMakeFiles/display_autogen.dir/all
+
+# Build rule for subdir invocation for target.
+display/CMakeFiles/display_autogen.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /root/Monitor/build/CMakeFiles 29
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 display/CMakeFiles/display_autogen.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /root/Monitor/build/CMakeFiles 0
+.PHONY : display/CMakeFiles/display_autogen.dir/rule
+
+# Convenience name for target.
+display_autogen: display/CMakeFiles/display_autogen.dir/rule
+.PHONY : display_autogen
+
+# codegen rule for target.
+display/CMakeFiles/display_autogen.dir/codegen: display/CMakeFiles/display_autogen_timestamp_deps.dir/all
+	$(MAKE) $(MAKESILENT) -f display/CMakeFiles/display_autogen.dir/build.make display/CMakeFiles/display_autogen.dir/codegen
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/root/Monitor/build/CMakeFiles --progress-num=7 "Finished codegen for target display_autogen"
+.PHONY : display/CMakeFiles/display_autogen.dir/codegen
+
+# clean rule for target.
+display/CMakeFiles/display_autogen.dir/clean:
+	$(MAKE) $(MAKESILENT) -f display/CMakeFiles/display_autogen.dir/build.make display/CMakeFiles/display_autogen.dir/clean
+.PHONY : display/CMakeFiles/display_autogen.dir/clean
 
 #=============================================================================
 # Special targets to cleanup operation of make.

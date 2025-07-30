@@ -15,7 +15,7 @@ target_include_directories(client
 )
 target_link_libraries(client 
   PUBLIC
-  message 
+  info
   monitor 
   ${BRPC_LIBRARY}
   ${Protobuf_LIBRARIES}
@@ -34,7 +34,7 @@ target_include_directories(server
 )
 target_link_libraries(server 
   PRIVATE 
-  message 
+  info
   monitor 
   ${BRPC_LIBRARY}
   ${Protobuf_LIBRARIES}
