@@ -124,25 +124,39 @@ depend:
 .PHONY : depend
 
 # Convenience name for target.
-protocol/CMakeFiles/message.dir/rule:
-	cd /root/Monitor/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 protocol/CMakeFiles/message.dir/rule
-.PHONY : protocol/CMakeFiles/message.dir/rule
+protocol/CMakeFiles/proto.dir/rule:
+	cd /root/Monitor/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 protocol/CMakeFiles/proto.dir/rule
+.PHONY : protocol/CMakeFiles/proto.dir/rule
 
 # Convenience name for target.
-message: protocol/CMakeFiles/message.dir/rule
-.PHONY : message
+proto: protocol/CMakeFiles/proto.dir/rule
+.PHONY : proto
 
 # fast build rule for target.
-message/fast:
-	cd /root/Monitor/build && $(MAKE) $(MAKESILENT) -f protocol/CMakeFiles/message.dir/build.make protocol/CMakeFiles/message.dir/build
-.PHONY : message/fast
+proto/fast:
+	cd /root/Monitor/build && $(MAKE) $(MAKESILENT) -f protocol/CMakeFiles/proto.dir/build.make protocol/CMakeFiles/proto.dir/build
+.PHONY : proto/fast
+
+# Convenience name for target.
+protocol/CMakeFiles/info.dir/rule:
+	cd /root/Monitor/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 protocol/CMakeFiles/info.dir/rule
+.PHONY : protocol/CMakeFiles/info.dir/rule
+
+# Convenience name for target.
+info: protocol/CMakeFiles/info.dir/rule
+.PHONY : info
+
+# fast build rule for target.
+info/fast:
+	cd /root/Monitor/build && $(MAKE) $(MAKESILENT) -f protocol/CMakeFiles/info.dir/build.make protocol/CMakeFiles/info.dir/build
+.PHONY : info/fast
 
 message/cpu_load.pb.o: message/cpu_load.pb.cc.o
 .PHONY : message/cpu_load.pb.o
 
 # target to build an object file
 message/cpu_load.pb.cc.o:
-	cd /root/Monitor/build && $(MAKE) $(MAKESILENT) -f protocol/CMakeFiles/message.dir/build.make protocol/CMakeFiles/message.dir/message/cpu_load.pb.cc.o
+	cd /root/Monitor/build && $(MAKE) $(MAKESILENT) -f protocol/CMakeFiles/info.dir/build.make protocol/CMakeFiles/info.dir/message/cpu_load.pb.cc.o
 .PHONY : message/cpu_load.pb.cc.o
 
 message/cpu_load.pb.i: message/cpu_load.pb.cc.i
@@ -150,7 +164,7 @@ message/cpu_load.pb.i: message/cpu_load.pb.cc.i
 
 # target to preprocess a source file
 message/cpu_load.pb.cc.i:
-	cd /root/Monitor/build && $(MAKE) $(MAKESILENT) -f protocol/CMakeFiles/message.dir/build.make protocol/CMakeFiles/message.dir/message/cpu_load.pb.cc.i
+	cd /root/Monitor/build && $(MAKE) $(MAKESILENT) -f protocol/CMakeFiles/info.dir/build.make protocol/CMakeFiles/info.dir/message/cpu_load.pb.cc.i
 .PHONY : message/cpu_load.pb.cc.i
 
 message/cpu_load.pb.s: message/cpu_load.pb.cc.s
@@ -158,7 +172,7 @@ message/cpu_load.pb.s: message/cpu_load.pb.cc.s
 
 # target to generate assembly for a file
 message/cpu_load.pb.cc.s:
-	cd /root/Monitor/build && $(MAKE) $(MAKESILENT) -f protocol/CMakeFiles/message.dir/build.make protocol/CMakeFiles/message.dir/message/cpu_load.pb.cc.s
+	cd /root/Monitor/build && $(MAKE) $(MAKESILENT) -f protocol/CMakeFiles/info.dir/build.make protocol/CMakeFiles/info.dir/message/cpu_load.pb.cc.s
 .PHONY : message/cpu_load.pb.cc.s
 
 message/cpu_softirq.pb.o: message/cpu_softirq.pb.cc.o
@@ -166,7 +180,7 @@ message/cpu_softirq.pb.o: message/cpu_softirq.pb.cc.o
 
 # target to build an object file
 message/cpu_softirq.pb.cc.o:
-	cd /root/Monitor/build && $(MAKE) $(MAKESILENT) -f protocol/CMakeFiles/message.dir/build.make protocol/CMakeFiles/message.dir/message/cpu_softirq.pb.cc.o
+	cd /root/Monitor/build && $(MAKE) $(MAKESILENT) -f protocol/CMakeFiles/info.dir/build.make protocol/CMakeFiles/info.dir/message/cpu_softirq.pb.cc.o
 .PHONY : message/cpu_softirq.pb.cc.o
 
 message/cpu_softirq.pb.i: message/cpu_softirq.pb.cc.i
@@ -174,7 +188,7 @@ message/cpu_softirq.pb.i: message/cpu_softirq.pb.cc.i
 
 # target to preprocess a source file
 message/cpu_softirq.pb.cc.i:
-	cd /root/Monitor/build && $(MAKE) $(MAKESILENT) -f protocol/CMakeFiles/message.dir/build.make protocol/CMakeFiles/message.dir/message/cpu_softirq.pb.cc.i
+	cd /root/Monitor/build && $(MAKE) $(MAKESILENT) -f protocol/CMakeFiles/info.dir/build.make protocol/CMakeFiles/info.dir/message/cpu_softirq.pb.cc.i
 .PHONY : message/cpu_softirq.pb.cc.i
 
 message/cpu_softirq.pb.s: message/cpu_softirq.pb.cc.s
@@ -182,7 +196,7 @@ message/cpu_softirq.pb.s: message/cpu_softirq.pb.cc.s
 
 # target to generate assembly for a file
 message/cpu_softirq.pb.cc.s:
-	cd /root/Monitor/build && $(MAKE) $(MAKESILENT) -f protocol/CMakeFiles/message.dir/build.make protocol/CMakeFiles/message.dir/message/cpu_softirq.pb.cc.s
+	cd /root/Monitor/build && $(MAKE) $(MAKESILENT) -f protocol/CMakeFiles/info.dir/build.make protocol/CMakeFiles/info.dir/message/cpu_softirq.pb.cc.s
 .PHONY : message/cpu_softirq.pb.cc.s
 
 message/cpu_stat.pb.o: message/cpu_stat.pb.cc.o
@@ -190,7 +204,7 @@ message/cpu_stat.pb.o: message/cpu_stat.pb.cc.o
 
 # target to build an object file
 message/cpu_stat.pb.cc.o:
-	cd /root/Monitor/build && $(MAKE) $(MAKESILENT) -f protocol/CMakeFiles/message.dir/build.make protocol/CMakeFiles/message.dir/message/cpu_stat.pb.cc.o
+	cd /root/Monitor/build && $(MAKE) $(MAKESILENT) -f protocol/CMakeFiles/info.dir/build.make protocol/CMakeFiles/info.dir/message/cpu_stat.pb.cc.o
 .PHONY : message/cpu_stat.pb.cc.o
 
 message/cpu_stat.pb.i: message/cpu_stat.pb.cc.i
@@ -198,7 +212,7 @@ message/cpu_stat.pb.i: message/cpu_stat.pb.cc.i
 
 # target to preprocess a source file
 message/cpu_stat.pb.cc.i:
-	cd /root/Monitor/build && $(MAKE) $(MAKESILENT) -f protocol/CMakeFiles/message.dir/build.make protocol/CMakeFiles/message.dir/message/cpu_stat.pb.cc.i
+	cd /root/Monitor/build && $(MAKE) $(MAKESILENT) -f protocol/CMakeFiles/info.dir/build.make protocol/CMakeFiles/info.dir/message/cpu_stat.pb.cc.i
 .PHONY : message/cpu_stat.pb.cc.i
 
 message/cpu_stat.pb.s: message/cpu_stat.pb.cc.s
@@ -206,7 +220,7 @@ message/cpu_stat.pb.s: message/cpu_stat.pb.cc.s
 
 # target to generate assembly for a file
 message/cpu_stat.pb.cc.s:
-	cd /root/Monitor/build && $(MAKE) $(MAKESILENT) -f protocol/CMakeFiles/message.dir/build.make protocol/CMakeFiles/message.dir/message/cpu_stat.pb.cc.s
+	cd /root/Monitor/build && $(MAKE) $(MAKESILENT) -f protocol/CMakeFiles/info.dir/build.make protocol/CMakeFiles/info.dir/message/cpu_stat.pb.cc.s
 .PHONY : message/cpu_stat.pb.cc.s
 
 message/mem_info.pb.o: message/mem_info.pb.cc.o
@@ -214,7 +228,7 @@ message/mem_info.pb.o: message/mem_info.pb.cc.o
 
 # target to build an object file
 message/mem_info.pb.cc.o:
-	cd /root/Monitor/build && $(MAKE) $(MAKESILENT) -f protocol/CMakeFiles/message.dir/build.make protocol/CMakeFiles/message.dir/message/mem_info.pb.cc.o
+	cd /root/Monitor/build && $(MAKE) $(MAKESILENT) -f protocol/CMakeFiles/info.dir/build.make protocol/CMakeFiles/info.dir/message/mem_info.pb.cc.o
 .PHONY : message/mem_info.pb.cc.o
 
 message/mem_info.pb.i: message/mem_info.pb.cc.i
@@ -222,7 +236,7 @@ message/mem_info.pb.i: message/mem_info.pb.cc.i
 
 # target to preprocess a source file
 message/mem_info.pb.cc.i:
-	cd /root/Monitor/build && $(MAKE) $(MAKESILENT) -f protocol/CMakeFiles/message.dir/build.make protocol/CMakeFiles/message.dir/message/mem_info.pb.cc.i
+	cd /root/Monitor/build && $(MAKE) $(MAKESILENT) -f protocol/CMakeFiles/info.dir/build.make protocol/CMakeFiles/info.dir/message/mem_info.pb.cc.i
 .PHONY : message/mem_info.pb.cc.i
 
 message/mem_info.pb.s: message/mem_info.pb.cc.s
@@ -230,7 +244,7 @@ message/mem_info.pb.s: message/mem_info.pb.cc.s
 
 # target to generate assembly for a file
 message/mem_info.pb.cc.s:
-	cd /root/Monitor/build && $(MAKE) $(MAKESILENT) -f protocol/CMakeFiles/message.dir/build.make protocol/CMakeFiles/message.dir/message/mem_info.pb.cc.s
+	cd /root/Monitor/build && $(MAKE) $(MAKESILENT) -f protocol/CMakeFiles/info.dir/build.make protocol/CMakeFiles/info.dir/message/mem_info.pb.cc.s
 .PHONY : message/mem_info.pb.cc.s
 
 message/net_info.pb.o: message/net_info.pb.cc.o
@@ -238,7 +252,7 @@ message/net_info.pb.o: message/net_info.pb.cc.o
 
 # target to build an object file
 message/net_info.pb.cc.o:
-	cd /root/Monitor/build && $(MAKE) $(MAKESILENT) -f protocol/CMakeFiles/message.dir/build.make protocol/CMakeFiles/message.dir/message/net_info.pb.cc.o
+	cd /root/Monitor/build && $(MAKE) $(MAKESILENT) -f protocol/CMakeFiles/info.dir/build.make protocol/CMakeFiles/info.dir/message/net_info.pb.cc.o
 .PHONY : message/net_info.pb.cc.o
 
 message/net_info.pb.i: message/net_info.pb.cc.i
@@ -246,7 +260,7 @@ message/net_info.pb.i: message/net_info.pb.cc.i
 
 # target to preprocess a source file
 message/net_info.pb.cc.i:
-	cd /root/Monitor/build && $(MAKE) $(MAKESILENT) -f protocol/CMakeFiles/message.dir/build.make protocol/CMakeFiles/message.dir/message/net_info.pb.cc.i
+	cd /root/Monitor/build && $(MAKE) $(MAKESILENT) -f protocol/CMakeFiles/info.dir/build.make protocol/CMakeFiles/info.dir/message/net_info.pb.cc.i
 .PHONY : message/net_info.pb.cc.i
 
 message/net_info.pb.s: message/net_info.pb.cc.s
@@ -254,7 +268,7 @@ message/net_info.pb.s: message/net_info.pb.cc.s
 
 # target to generate assembly for a file
 message/net_info.pb.cc.s:
-	cd /root/Monitor/build && $(MAKE) $(MAKESILENT) -f protocol/CMakeFiles/message.dir/build.make protocol/CMakeFiles/message.dir/message/net_info.pb.cc.s
+	cd /root/Monitor/build && $(MAKE) $(MAKESILENT) -f protocol/CMakeFiles/info.dir/build.make protocol/CMakeFiles/info.dir/message/net_info.pb.cc.s
 .PHONY : message/net_info.pb.cc.s
 
 message/service.pb.o: message/service.pb.cc.o
@@ -262,7 +276,7 @@ message/service.pb.o: message/service.pb.cc.o
 
 # target to build an object file
 message/service.pb.cc.o:
-	cd /root/Monitor/build && $(MAKE) $(MAKESILENT) -f protocol/CMakeFiles/message.dir/build.make protocol/CMakeFiles/message.dir/message/service.pb.cc.o
+	cd /root/Monitor/build && $(MAKE) $(MAKESILENT) -f protocol/CMakeFiles/info.dir/build.make protocol/CMakeFiles/info.dir/message/service.pb.cc.o
 .PHONY : message/service.pb.cc.o
 
 message/service.pb.i: message/service.pb.cc.i
@@ -270,7 +284,7 @@ message/service.pb.i: message/service.pb.cc.i
 
 # target to preprocess a source file
 message/service.pb.cc.i:
-	cd /root/Monitor/build && $(MAKE) $(MAKESILENT) -f protocol/CMakeFiles/message.dir/build.make protocol/CMakeFiles/message.dir/message/service.pb.cc.i
+	cd /root/Monitor/build && $(MAKE) $(MAKESILENT) -f protocol/CMakeFiles/info.dir/build.make protocol/CMakeFiles/info.dir/message/service.pb.cc.i
 .PHONY : message/service.pb.cc.i
 
 message/service.pb.s: message/service.pb.cc.s
@@ -278,7 +292,7 @@ message/service.pb.s: message/service.pb.cc.s
 
 # target to generate assembly for a file
 message/service.pb.cc.s:
-	cd /root/Monitor/build && $(MAKE) $(MAKESILENT) -f protocol/CMakeFiles/message.dir/build.make protocol/CMakeFiles/message.dir/message/service.pb.cc.s
+	cd /root/Monitor/build && $(MAKE) $(MAKESILENT) -f protocol/CMakeFiles/info.dir/build.make protocol/CMakeFiles/info.dir/message/service.pb.cc.s
 .PHONY : message/service.pb.cc.s
 
 # Help Target
@@ -290,7 +304,8 @@ help:
 	@echo "... codegen"
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
-	@echo "... message"
+	@echo "... proto"
+	@echo "... info"
 	@echo "... message/cpu_load.pb.o"
 	@echo "... message/cpu_load.pb.i"
 	@echo "... message/cpu_load.pb.s"

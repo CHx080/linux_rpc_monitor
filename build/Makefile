@@ -124,95 +124,30 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named message
+# Target rules for targets named proto
 
 # Build rule for target.
-message: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 message
-.PHONY : message
+proto: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 proto
+.PHONY : proto
 
 # fast build rule for target.
-message/fast:
-	$(MAKE) $(MAKESILENT) -f protocol/CMakeFiles/message.dir/build.make protocol/CMakeFiles/message.dir/build
-.PHONY : message/fast
+proto/fast:
+	$(MAKE) $(MAKESILENT) -f protocol/CMakeFiles/proto.dir/build.make protocol/CMakeFiles/proto.dir/build
+.PHONY : proto/fast
 
 #=============================================================================
-# Target rules for targets named monitor
+# Target rules for targets named info
 
 # Build rule for target.
-monitor: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 monitor
-.PHONY : monitor
+info: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 info
+.PHONY : info
 
 # fast build rule for target.
-monitor/fast:
-	$(MAKE) $(MAKESILENT) -f monitor/CMakeFiles/monitor.dir/build.make monitor/CMakeFiles/monitor.dir/build
-.PHONY : monitor/fast
-
-#=============================================================================
-# Target rules for targets named client
-
-# Build rule for target.
-client: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 client
-.PHONY : client
-
-# fast build rule for target.
-client/fast:
-	$(MAKE) $(MAKESILENT) -f rpc/CMakeFiles/client.dir/build.make rpc/CMakeFiles/client.dir/build
-.PHONY : client/fast
-
-#=============================================================================
-# Target rules for targets named server
-
-# Build rule for target.
-server: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 server
-.PHONY : server
-
-# fast build rule for target.
-server/fast:
-	$(MAKE) $(MAKESILENT) -f rpc/CMakeFiles/server.dir/build.make rpc/CMakeFiles/server.dir/build
-.PHONY : server/fast
-
-#=============================================================================
-# Target rules for targets named display
-
-# Build rule for target.
-display: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 display
-.PHONY : display
-
-# fast build rule for target.
-display/fast:
-	$(MAKE) $(MAKESILENT) -f display/CMakeFiles/display.dir/build.make display/CMakeFiles/display.dir/build
-.PHONY : display/fast
-
-#=============================================================================
-# Target rules for targets named display_autogen_timestamp_deps
-
-# Build rule for target.
-display_autogen_timestamp_deps: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 display_autogen_timestamp_deps
-.PHONY : display_autogen_timestamp_deps
-
-# fast build rule for target.
-display_autogen_timestamp_deps/fast:
-	$(MAKE) $(MAKESILENT) -f display/CMakeFiles/display_autogen_timestamp_deps.dir/build.make display/CMakeFiles/display_autogen_timestamp_deps.dir/build
-.PHONY : display_autogen_timestamp_deps/fast
-
-#=============================================================================
-# Target rules for targets named display_autogen
-
-# Build rule for target.
-display_autogen: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 display_autogen
-.PHONY : display_autogen
-
-# fast build rule for target.
-display_autogen/fast:
-	$(MAKE) $(MAKESILENT) -f display/CMakeFiles/display_autogen.dir/build.make display/CMakeFiles/display_autogen.dir/build
-.PHONY : display_autogen/fast
+info/fast:
+	$(MAKE) $(MAKESILENT) -f protocol/CMakeFiles/info.dir/build.make protocol/CMakeFiles/info.dir/build
+.PHONY : info/fast
 
 # Help Target
 help:
@@ -223,13 +158,8 @@ help:
 	@echo "... codegen"
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
-	@echo "... display_autogen"
-	@echo "... display_autogen_timestamp_deps"
-	@echo "... client"
-	@echo "... display"
-	@echo "... message"
-	@echo "... monitor"
-	@echo "... server"
+	@echo "... proto"
+	@echo "... info"
 .PHONY : help
 
 

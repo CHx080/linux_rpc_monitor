@@ -1,36 +1,33 @@
 find_package(Protobuf REQUIRED)
 
-set(RES_DIR ${CMAKE_CURRENT_SOURCE_DIR}/message)
-set(MESSAGE_SRC "")
-file(MAKE_DIRECTORY ${RES_DIR})
+set(PROTO_DFILE_DIR ${CMAKE_CURRENT_BINARY_DIR}/message) #protoc编译后的文件存放路径
+set(PROTO_SFILE 
+  ${CMAKE_CURRENT_SOURCE_DIR}/cpu_load.proto
+  ${CMAKE_CURRENT_SOURCE_DIR}/cpu_softirq.proto
+  ${CMAKE_CURRENT_SOURCE_DIR}/cpu_stat.proto
+  ${CMAKE_CURRENT_SOURCE_DIR}/mem_info.proto
+  ${CMAKE_CURRENT_SOURCE_DIR}/net_info.proto
+  ${CMAKE_CURRENT_SOURCE_DIR}/service.proto
+) #proto文件路径
 
-set(MSG_PROTOS
-    ${CMAKE_CURRENT_SOURCE_DIR}/cpu_load.proto
-    ${CMAKE_CURRENT_SOURCE_DIR}/cpu_softirq.proto
-    ${CMAKE_CURRENT_SOURCE_DIR}/cpu_stat.proto
-    ${CMAKE_CURRENT_SOURCE_DIR}/mem_info.proto
-    ${CMAKE_CURRENT_SOURCE_DIR}/net_info.proto
-    ${CMAKE_CURRENT_SOURCE_DIR}/service.proto
-)
+file(MAKE_DIRECTORY ${PROTO_DFILE_DIR})
+set(PROTO_SRC_OBJECTS "")
 
-foreach(msg ${MSG_PROTOS})
-        get_filename_component(FIL_WE ${msg} NAME_WE)
-
-        list(APPEND MESSAGE_SRC "${RES_DIR}/${FIL_WE}.pb.cc")
-
-        add_custom_command(
-          OUTPUT "${RES_DIR}/${FIL_WE}.pb.cc"
-                 "${RES_DIR}/${FIL_WE}.pb.h"
-          COMMAND  ${PROTOBUF_PROTOC_EXECUTABLE}
-          ARGS --cpp_out ${RES_DIR}
-            -I ${CMAKE_CURRENT_SOURCE_DIR}
-            ${msg}
-          DEPENDS ${msg}
-          COMMENT "Running C++ protocol buffer compiler on ${msg}"
-          VERBATIM 
-        )
+foreach(item ${PROTO_SFILE})
+  get_filename_component(item_name ${item} NAME_WE)
+  add_custom_command(
+    OUTPUT ${PROTO_DFILE_DIR}/${item_name}.pb.h ${PROTO_DFILE_DIR}/${item_name}.pb.cc
+    COMMAND ${PROTOBUF_PROTOC_EXECUTABLE}
+    ARGS --cpp_out ${PROTO_DFILE_DIR} -I ${CMAKE_CURRENT_SOURCE_DIR} ${item}
+    COMMENT "Running protoc to ${item}"
+    VERBATIM 
+  )  
+  list(APPEND PROTO_SRC_OBJECTS ${PROTO_DFILE_DIR}/${item_name}.pb.cc)
 endforeach()
 
-add_library(message SHARED ${MESSAGE_SRC}) 
-target_include_directories(message PUBLIC ${RES_DIR})  
-target_link_libraries(message PRIVATE ${Protobuf_LIBRARIES}) 
+add_custom_target(proto ALL DEPENDS ${PROTO_SRC_OBJECTS})
+add_library(info STATIC ${PROTO_SRC_OBJECTS})
+add_dependencies(info proto)
+target_sources(info PRIVATE ${PROTO_CPP_SRC})
+target_include_directories(info PUBLIC ${PROTO_DFILE_DIR})
+target_link_libraries(info PUBLIC ${Protobuf_LIBRARIES})
